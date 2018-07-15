@@ -4,21 +4,19 @@ out,
 clk_50
 );
 
-parameter WIDTH = 5;
+parameter WIDTH = 7;
 
 input clk_50;
 input [WIDTH-1:0] in;
 output [15:0] out;
 
 wire [WIDTH-1:0] in;
-reg in_sign;
-reg [15-WIDTH:0] upper;
 
 assign out = {{(16-WIDTH){in[WIDTH-1]}}, in[WIDTH-1:0]};
 
 endmodule
 
-module sext_test #(parameter WIDTH = 5);
+module sext_test #(parameter WIDTH = 7);
 
 reg internal_clock;
 reg [WIDTH-1:0]in_test;
@@ -30,7 +28,7 @@ sext dut(
 );
 
 initial begin
-	in_test = -5;
+	in_test = -10;
 	internal_clock = 0;
 end
 
