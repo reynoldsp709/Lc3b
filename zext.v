@@ -1,10 +1,8 @@
 module zext (
 in,
-out,
-clk_50
+out
 );
 
-input clk_50;
 input [7:0] in;
 output [15:0] out;
 
@@ -21,21 +19,20 @@ reg [7:0] in_test;
 wire [15:0] out_test;
 zext dut(
 .in				(in_test),
-.out				(out_test),
-.clk_50			(internal_clock)
+.out				(out_test)
 );
 
 initial begin
-	in_test = 0;
-	internal_clock = 0;
+	in_test <= -10;
+	internal_clock <= 0;
 end
 
 always begin
-	#5 internal_clock = !internal_clock;
+	#5 internal_clock <= !internal_clock;
 end
 
 always @(posedge internal_clock) begin
-	in_test = in_test + 1;
+	in_test <= in_test + 1;
 end
 
 endmodule
