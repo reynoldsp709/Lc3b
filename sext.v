@@ -1,3 +1,14 @@
+/*	Module: sext(WIDTH);
+*
+*	Parameter:
+*		In: 			in - 8-bit input value to be extended
+*		Out: 			out - 16-bit zero-extended output value
+*
+*	Description: 	The module outputs the variable width input number padded to 16-bits with its sign bit value.
+*
+*	Author: Patrick Reynolds
+*/
+
 module sext (
 in,
 out

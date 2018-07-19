@@ -1,3 +1,16 @@
+/*	Module: sext();
+*
+*	Parameter:
+*		In: 	aluk - 2-bit input control value that determines ALU operation
+*				a - First 16-bit input value operand
+*				b - First 16-bit input value operand
+*		Out: 	result - 16-bit ALU result value
+*
+*	Description: The module outputs the variable width input number padded to 16-bits with its sign bit value.
+*
+*	Author: Patrick Reynolds
+*/
+
 module alu (
 	aluk,
 	a,
