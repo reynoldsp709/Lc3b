@@ -30,6 +30,7 @@ module sext_test #(parameter WIDTH = 7);
 reg internal_clock;
 reg [WIDTH-1:0]in_test;
 wire [15:0] out_test;
+
 sext dut(
 .in				(in_test),
 .out				(out_test)

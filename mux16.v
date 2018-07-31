@@ -30,6 +30,7 @@ reg internal_clock;
 reg [15:0] in_test;
 reg [3:0] select_test;
 wire out_test;
+
 mux16 dut(
 .in				(in_test),
 .out				(out_test),

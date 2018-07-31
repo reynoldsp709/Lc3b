@@ -28,6 +28,7 @@ module zext_test ();
 reg internal_clock;
 reg [7:0] in_test;
 wire [15:0] out_test;
+
 zext dut(
 .in				(in_test),
 .out				(out_test)

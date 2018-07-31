@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/reyno/Documents/Summer 2018 Computer Architecture/SummerComputerArchitecture/simulation/modelsim
 vio_buf_opdrn
-Z1 !s110 1531954484
+Z1 !s110 1533047349
 !i10b 1
 !s100 =^<AH`I:TA`[9YUe=h1;_1
 In]If2N6ahMol68_nURcG02
@@ -23,7 +23,7 @@ Z6 OP;L;10.4a;61
 r1
 !s85 0
 31
-Z7 !s108 1531954484.000000
+Z7 !s108 1533047349.000000
 Z8 !s107 d:/altera-master/altera/13.0sp1/quartus/eda/sim_lib/sgate.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|sgate_ver|d:/altera-master/altera/13.0sp1/quartus/eda/sim_lib/sgate.v|
 !s101 -O0

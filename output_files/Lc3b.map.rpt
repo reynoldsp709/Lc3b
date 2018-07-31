@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lc3b
-Wed Jul 18 18:54:28 2018
+Tue Jul 31 10:28:59 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -41,16 +41,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jul 18 18:54:28 2018           ;
+; Analysis & Synthesis Status        ; Successful - Tue Jul 31 10:28:59 2018           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Lc3b                                            ;
-; Top-level Entity Name              ; regfile                                         ;
+; Top-level Entity Name              ; gate                                            ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 296                                             ;
-;     Total combinational functions  ; 168                                             ;
-;     Dedicated logic registers      ; 128                                             ;
-; Total registers                    ; 128                                             ;
-; Total pins                         ; 59                                              ;
+; Total logic elements               ; 0                                               ;
+;     Total combinational functions  ; 0                                               ;
+;     Dedicated logic registers      ; 0                                               ;
+; Total registers                    ; 0                                               ;
+; Total pins                         ; 33                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CE22F17C6       ;                    ;
-; Top-level entity name                                                      ; regfile            ; Lc3b               ;
+; Top-level entity name                                                      ; gate               ; Lc3b               ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -156,13 +156,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                  ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                    ; Library ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------+---------+
-; regfile.v                        ; yes             ; User Verilog HDL File  ; C:/Users/reyno/Documents/Summer 2018 Computer Architecture/SummerComputerArchitecture/regfile.v ;         ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                               ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                 ; Library ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------+---------+
+; gate.v                           ; yes             ; User Verilog HDL File  ; C:/Users/reyno/Documents/Summer 2018 Computer Architecture/SummerComputerArchitecture/gate.v ;         ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------------+
@@ -170,28 +170,27 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+--------------+
 ; Resource                                    ; Usage        ;
 +---------------------------------------------+--------------+
-; Estimated Total logic elements              ; 296          ;
 ;                                             ;              ;
-; Total combinational functions               ; 168          ;
+; Total combinational functions               ; 0            ;
 ; Logic element usage by number of LUT inputs ;              ;
-;     -- 4 input functions                    ; 136          ;
-;     -- 3 input functions                    ; 32           ;
+;     -- 4 input functions                    ; 0            ;
+;     -- 3 input functions                    ; 0            ;
 ;     -- <=2 input functions                  ; 0            ;
 ;                                             ;              ;
 ; Logic elements by mode                      ;              ;
-;     -- normal mode                          ; 168          ;
+;     -- normal mode                          ; 0            ;
 ;     -- arithmetic mode                      ; 0            ;
 ;                                             ;              ;
-; Total registers                             ; 128          ;
-;     -- Dedicated logic registers            ; 128          ;
+; Total registers                             ; 0            ;
+;     -- Dedicated logic registers            ; 0            ;
 ;     -- I/O registers                        ; 0            ;
 ;                                             ;              ;
-; I/O pins                                    ; 59           ;
+; I/O pins                                    ; 33           ;
 ; Embedded Multiplier 9-bit elements          ; 0            ;
-; Maximum fan-out node                        ; clk_50~input ;
-; Maximum fan-out                             ; 128          ;
-; Total fan-out                               ; 1115         ;
-; Average fan-out                             ; 2.69         ;
+; Maximum fan-out node                        ; enable~input ;
+; Maximum fan-out                             ; 16           ;
+; Total fan-out                               ; 65           ;
+; Average fan-out                             ; 0.98         ;
 +---------------------------------------------+--------------+
 
 
@@ -200,7 +199,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |regfile                   ; 168 (168)         ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 59   ; 0            ; |regfile            ; work         ;
+; |gate                      ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 33   ; 0            ; |gate               ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -210,12 +209,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 128   ;
+; Total registers                              ; 0     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 128   ;
+; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -235,7 +234,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Jul 18 18:54:26 2018
+    Info: Processing started: Tue Jul 31 10:28:58 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lc3b -c Lc3b
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 2 entities, in source file mux16.v
@@ -257,21 +256,22 @@ Info (12021): Found 2 design units, including 2 entities, in source file regfile
 Info (12021): Found 2 design units, including 2 entities, in source file alu.v
     Info (12023): Found entity 1: alu
     Info (12023): Found entity 2: alu_test
-Info (12127): Elaborating entity "regfile" for the top level hierarchy
-Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276004): RAM logic "reg_memory" is uninferred due to inappropriate RAM size
-Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/reyno/Documents/Summer 2018 Computer Architecture/SummerComputerArchitecture/db/Lc3b.ram0_regfile_4c9f4da2.hdl.mif" contains "don't care" values -- overwriting them with 0s
-Info (286030): Timing-Driven Synthesis is running
+Info (12021): Found 2 design units, including 2 entities, in source file shift.v
+    Info (12023): Found entity 1: shift
+    Info (12023): Found entity 2: shift_test
+Info (12021): Found 2 design units, including 2 entities, in source file gate.v
+    Info (12023): Found entity 1: gate
+    Info (12023): Found entity 2: gate_test
+Info (12127): Elaborating entity "gate" for the top level hierarchy
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 355 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 27 input pins
-    Info (21059): Implemented 32 output pins
-    Info (21061): Implemented 296 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4591 megabytes
-    Info: Processing ended: Wed Jul 18 18:54:28 2018
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+Info (21057): Implemented 33 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 17 input pins
+    Info (21059): Implemented 16 output pins
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4592 megabytes
+    Info: Processing ended: Tue Jul 31 10:28:59 2018
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 

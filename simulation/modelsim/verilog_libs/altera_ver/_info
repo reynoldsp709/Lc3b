@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/reyno/Documents/Summer 2018 Computer Architecture/SummerComputerArchitecture/simulation/modelsim
 valt_bidir_buf
-Z1 !s110 1531954483
+Z1 !s110 1533047348
 !i10b 1
 !s100 a6?6cHeC]_[b_;=i8O1hN3
 Ieo?hZMjQ8B;zmm4F>X:c30
@@ -23,7 +23,7 @@ Z6 OP;L;10.4a;61
 r1
 !s85 0
 31
-Z7 !s108 1531954483.000000
+Z7 !s108 1533047348.000000
 Z8 !s107 d:/altera-master/altera/13.0sp1/quartus/eda/sim_lib/altera_primitives.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|altera_ver|d:/altera-master/altera/13.0sp1/quartus/eda/sim_lib/altera_primitives.v|
 !s101 -O0
@@ -597,7 +597,7 @@ R9
 !i113 1
 R10
 UPRIM_GDFF_HIGH
-R1
+!s110 1533047349
 !i10b 1
 !s100 <RlezzC46azngjigY]=oS2
 IOC3WFL?`C^D^?MjNINJ0S3
