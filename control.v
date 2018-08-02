@@ -1,14 +1,14 @@
-/*	Module: control();
+/* Module: control();
 *
-*	Parameter:
-*		In: 			
-*		Out: 			
+*  Parameter:
+*      In:
+*      Out:
 *
-*	Description:	The module acts as a control unit for the LC-3b architecture. 
-*						Sets gates and select lines along the datapath, and updates the state
-*						value of the machine.
+*  Description: The module acts as a control unit for the LC-3b architecture. 
+*               Sets gates and select lines along the datapath, and updates the state
+*               value of the machine.
 *
-*	Author: Patrick Reynolds
+*  Author: Patrick Reynolds
 */
 
 module control (
@@ -275,4 +275,6 @@ always @(posedge clk_50) begin
 		ldpc <= 1;
 		state <= 6'd18;
 	end
+endcase
+
 endmodule

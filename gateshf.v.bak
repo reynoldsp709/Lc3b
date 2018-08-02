@@ -1,14 +1,14 @@
-/* Module: gate();
+/*	Module: gate();
 *
-*  Parameter:
-*      In:      enable - Gate enable value
-*               in - 16-bit input value
-*      Out:     out - 16-bit output value
+*	Parameter:
+*		In: 			enable - Gate enable value
+*						in - 16-bit input value
+*		Out: 			out - 16-bit output value
 *
-*  Description: The module sends either the input value or high impedance to the output,
-*               depending on the enable value.
+*	Description:	The module sends either the input value or high impedance to the output,
+*						depending on the enable value.
 *
-*  Author: Patrick Reynolds
+*	Author: Patrick Reynolds
 */
 
 module gate (

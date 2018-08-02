@@ -1,12 +1,12 @@
-/*	Module: zext();
+/* Module: zext();
 *
-*	Parameter:
-*		In: 			in - 8-bit input value to be extended
-*		Out: 			out - 16-bit zero-extended output value
+*  Parameter:
+*      In:      in - 8-bit input value to be extended
+*      Out:     out - 16-bit zero-extended output value
 *
-*	Description:	The module outputs the 8-bit input number padded with zeroes to 16-bits.
+*  Description: The module outputs the 8-bit input number padded with zeroes to 16-bits.
 *
-*	Author: Patrick Reynolds
+*  Author: Patrick Reynolds
 */
 
 module zext (

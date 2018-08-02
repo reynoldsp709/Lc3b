@@ -1,19 +1,19 @@
-/*	Module: regfile();
+/* Module: regfile();
 *
-*	Parameter:
-*		In: 			in - 16-bit input value to be written into the destination register
-*						clk_50 - Clock
-*						sr1 - Address of first source register to read
-*						sr2 - Address of second source register to read
-*						dr - Address of the destination register
-*						ldreg - Write enable for the 'in' value
-*		Out: 			sr1_out - Value read from first source register
-*						sr2_out - Value read from second source register
+*  Parameter:
+*      In:      in - 16-bit input value to be written into the destination register
+*               clk_50 - Clock
+*               sr1 - Address of first source register to read
+*               sr2 - Address of second source register to read
+*               dr - Address of the destination register
+*               ldreg - Write enable for the 'in' value
+*      Out:     sr1_out - Value read from first source register
+*               sr2_out - Value read from second source register
 *
-*	Description:	The module implements an 16x8 2-dimensional array to 
-*						output values located at two memory registers and write to memory registers.
+*  Description: The module implements an 16x8 2-dimensional array to 
+*               output values located at two memory registers and write to memory registers.
 *
-*	Author: Patrick Reynolds
+*  Author: Patrick Reynolds
 */
 
 module regfile (

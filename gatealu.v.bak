@@ -1,17 +1,17 @@
-/* Module: gate();
+/*	Module: gatealu();
 *
-*  Parameter:
-*      In:      enable - Gate enable value
-*               in - 16-bit input value
-*      Out:     out - 16-bit output value
+*	Parameter:
+*		In: 			enable - Gate enable value
+*						in - 16-bit input value
+*		Out: 			out - 16-bit output value
 *
-*  Description: The module sends either the input value or high impedance to the output,
-*               depending on the enable value.
+*	Description:	The module sends either the input value or high impedance to the output,
+*						depending on the enable value.
 *
-*  Author: Patrick Reynolds
+*	Author: Patrick Reynolds
 */
 
-module gate (
+module gatealu (
 	enable,
 	in,
 	out
@@ -30,14 +30,14 @@ end
 
 endmodule
 
-module gate_test();
+module gatealu_test();
 
 reg internal_clock;
 reg enable_test;
 reg [15:0] in_test;
 wire [15:0] out_test;
 
-gate dut(
+gatealu dut(
 	.enable	(enable_test),
 	.in		(in_test),
 	.out		(out_test)

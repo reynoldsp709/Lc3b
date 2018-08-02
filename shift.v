@@ -1,17 +1,17 @@
-/*	Module: shift();
+/* Module: shift();
 *
-*	Parameter:
-*		In: 			a - 1-bit arithmetic value, determines sign preservation
-*						d - 1-bit directional value, determines direction of shift
-*						amt - 4-bit integer value, determines number of bits shifted
-*						in - 16-bit input value to be shifted
-*		Out: 			out - 16-bit shifted output value
+*  Parameter:
+*      In:      a - 1-bit arithmetic value, determines sign preservation
+*               d - 1-bit directional value, determines direction of shift
+*               amt - 4-bit integer value, determines number of bits shifted
+*               in - 16-bit input value to be shifted
+*      Out:     out - 16-bit shifted output value
 *
-*	Description:	The module shifts the input binary value by a given number of bits
-*						left or right, depending on the direction value. The arithmetic
-*						value determines whether the sign will be preserved or not.
+*  Description: The module shifts the input binary value by a given number of bits
+*               left or right, depending on the direction value. The arithmetic
+*               value determines whether the sign will be preserved or not.
 *
-*	Author: Patrick Reynolds
+* Author: Patrick Reynolds
 */
 
 module shift (

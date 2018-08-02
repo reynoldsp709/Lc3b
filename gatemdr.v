@@ -1,4 +1,4 @@
-/* Module: gate();
+/* Module: gatemdr();
 *
 *  Parameter:
 *      In:      enable - Gate enable value
@@ -11,7 +11,7 @@
 *  Author: Patrick Reynolds
 */
 
-module gate (
+module gatemdr (
 	enable,
 	in,
 	out
@@ -30,14 +30,14 @@ end
 
 endmodule
 
-module gate_test();
+module gatemdr_test();
 
 reg internal_clock;
 reg enable_test;
 reg [15:0] in_test;
 wire [15:0] out_test;
 
-gate dut(
+gatemdr dut(
 	.enable	(enable_test),
 	.in		(in_test),
 	.out		(out_test)
