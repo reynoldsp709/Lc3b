@@ -1,0 +1,11 @@
+module sext_function ();
+
+function sign_extend;
+input [7:0] temp_in;
+output [15:0] temp_out;
+begin
+	assign temp_out = {{(8){temp_in[7]}}, temp_in[7:0]};
+end
+endfunction
+
+endmodule

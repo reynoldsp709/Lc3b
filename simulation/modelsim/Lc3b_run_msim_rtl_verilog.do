@@ -33,5 +33,5 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vlog -vlog01compat -work work +incdir+C:/Users/reyno/Documents/Summer\ 2018\ Computer\ Architecture/SummerComputerArchitecture {C:/Users/reyno/Documents/Summer 2018 Computer Architecture/SummerComputerArchitecture/gate.v}
+vlog -vlog01compat -work work +incdir+C:/Users/reyno/Documents/Summer\ 2018\ Computer\ Architecture/SummerComputerArchitecture {C:/Users/reyno/Documents/Summer 2018 Computer Architecture/SummerComputerArchitecture/sext.v}
 

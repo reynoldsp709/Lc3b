@@ -16,7 +16,7 @@
 #          Updated modelsim.ini.
 # vlog -vlog01compat -work altera_ver {d:/altera-master/altera/13.0sp1/quartus/eda/sim_lib/altera_primitives.v}
 # Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 10:29:08 on Jul 31,2018
+# Start time: 14:25:50 on Aug 05,2018
 # vlog -reportprogress 300 -vlog01compat -work altera_ver d:/altera-master/altera/13.0sp1/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
@@ -94,7 +94,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 10:29:09 on Jul 31,2018, Elapsed time: 0:00:01
+# End time: 14:25:51 on Aug 05,2018, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/lpm_ver
@@ -106,7 +106,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work lpm_ver {d:/altera-master/altera/13.0sp1/quartus/eda/sim_lib/220model.v}
 # Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 10:29:09 on Jul 31,2018
+# Start time: 14:25:52 on Aug 05,2018
 # vlog -reportprogress 300 -vlog01compat -work lpm_ver d:/altera-master/altera/13.0sp1/quartus/eda/sim_lib/220model.v 
 # -- Compiling module LPM_MEMORY_INITIALIZATION
 # -- Compiling module LPM_HINT_EVALUATION
@@ -170,7 +170,7 @@
 # 	lpm_inpad
 # 	lpm_outpad
 # 	lpm_bipad
-# End time: 10:29:09 on Jul 31,2018, Elapsed time: 0:00:00
+# End time: 14:25:52 on Aug 05,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/sgate_ver
@@ -182,7 +182,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work sgate_ver {d:/altera-master/altera/13.0sp1/quartus/eda/sim_lib/sgate.v}
 # Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 10:29:09 on Jul 31,2018
+# Start time: 14:25:52 on Aug 05,2018
 # vlog -reportprogress 300 -vlog01compat -work sgate_ver d:/altera-master/altera/13.0sp1/quartus/eda/sim_lib/sgate.v 
 # -- Compiling module oper_add
 # -- Compiling module oper_addsub
@@ -224,7 +224,7 @@
 # 	oper_decoder
 # 	oper_bus_mux
 # 	oper_latch
-# End time: 10:29:09 on Jul 31,2018, Elapsed time: 0:00:00
+# End time: 14:25:52 on Aug 05,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_mf_ver
@@ -236,7 +236,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_mf_ver {d:/altera-master/altera/13.0sp1/quartus/eda/sim_lib/altera_mf.v}
 # Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 10:29:09 on Jul 31,2018
+# Start time: 14:25:52 on Aug 05,2018
 # vlog -reportprogress 300 -vlog01compat -work altera_mf_ver d:/altera-master/altera/13.0sp1/quartus/eda/sim_lib/altera_mf.v 
 # -- Compiling module lcell
 # -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
@@ -361,7 +361,7 @@
 # 	altserial_flash_loader
 # 	sld_virtual_jtag_basic
 # 	altsource_probe
-# End time: 10:29:11 on Jul 31,2018, Elapsed time: 0:00:02
+# End time: 14:25:54 on Aug 05,2018, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_lnsim_ver
@@ -373,7 +373,7 @@
 # Modifying modelsim.ini
 # vlog -sv -work altera_lnsim_ver {d:/altera-master/altera/13.0sp1/quartus/eda/sim_lib/altera_lnsim.sv}
 # Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 10:29:11 on Jul 31,2018
+# Start time: 14:25:54 on Aug 05,2018
 # vlog -reportprogress 300 -sv -work altera_lnsim_ver d:/altera-master/altera/13.0sp1/quartus/eda/sim_lib/altera_lnsim.sv 
 # -- Compiling package altera_lnsim_functions
 # -- Compiling module altera_pll
@@ -431,7 +431,7 @@
 # 	generic_device_pll
 # 	altera_mult_add
 # 	altera_pll_reconfig_tasks
-# End time: 10:29:11 on Jul 31,2018, Elapsed time: 0:00:00
+# End time: 14:25:55 on Aug 05,2018, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cycloneive_ver
@@ -443,7 +443,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cycloneive_ver {d:/altera-master/altera/13.0sp1/quartus/eda/sim_lib/cycloneive_atoms.v}
 # Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 10:29:12 on Jul 31,2018
+# Start time: 14:25:55 on Aug 05,2018
 # vlog -reportprogress 300 -vlog01compat -work cycloneive_ver d:/altera-master/altera/13.0sp1/quartus/eda/sim_lib/cycloneive_atoms.v 
 # -- Compiling UDP CYCLONEIVE_PRIM_DFFE
 # -- Compiling UDP CYCLONEIVE_PRIM_DFFEAS
@@ -519,7 +519,7 @@
 # 	cycloneive_jtag
 # 	cycloneive_crcblock
 # 	cycloneive_oscillator
-# End time: 10:29:12 on Jul 31,2018, Elapsed time: 0:00:00
+# End time: 14:25:55 on Aug 05,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
@@ -531,19 +531,19 @@
 # vmap -modelsim_quiet work rtl_work 
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/reyno/Documents/Summer\ 2018\ Computer\ Architecture/SummerComputerArchitecture {C:/Users/reyno/Documents/Summer 2018 Computer Architecture/SummerComputerArchitecture/gate.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/reyno/Documents/Summer\ 2018\ Computer\ Architecture/SummerComputerArchitecture {C:/Users/reyno/Documents/Summer 2018 Computer Architecture/SummerComputerArchitecture/sext.v}
 # Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 10:29:12 on Jul 31,2018
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/reyno/Documents/Summer 2018 Computer Architecture/SummerComputerArchitecture" C:/Users/reyno/Documents/Summer 2018 Computer Architecture/SummerComputerArchitecture/gate.v 
-# -- Compiling module gate
-# -- Compiling module gate_test
+# Start time: 14:25:56 on Aug 05,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/reyno/Documents/Summer 2018 Computer Architecture/SummerComputerArchitecture" C:/Users/reyno/Documents/Summer 2018 Computer Architecture/SummerComputerArchitecture/sext.v 
+# -- Compiling module sext
+# -- Compiling module sext_test
 # 
 # Top level modules:
-# 	gate_test
-# End time: 10:29:12 on Jul 31,2018, Elapsed time: 0:00:00
+# 	sext_test
+# End time: 14:25:56 on Aug 05,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.gate_test
+vsim work.sext_test
 # //  ModelSim PE Student Edition 10.4a Apr  7 2015 
 # //
 # //  Copyright 1991-2015 Mentor Graphics Corporation
@@ -563,23 +563,24 @@ vsim work.gate_test
 # // FOR HIGHER EDUCATION PURPOSES ONLY
 # //
 # vsim -gui "+altera" -l msim_transcript -do "Lc3b_run_msim_rtl_verilog.do" 
-# Start time: 10:29:17 on Jul 31,2018
-# Loading work.gate_test
-# Loading work.gate
+# Start time: 14:25:58 on Aug 05,2018
+# Loading work.sext_test
+# Loading work.sext
 add wave -position insertpoint  \
-sim:/gate_test/internal_clock \
-sim:/gate_test/enable_test \
-sim:/gate_test/in_test \
-sim:/gate_test/out_test
+sim:/sext_test/WIDTH \
+sim:/sext_test/internal_clock \
+sim:/sext_test/in_test \
+sim:/sext_test/out_test
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
 #           File in use by: reyno  Hostname: REYNOLDSP  ProcessID: 6132
 # 
-#           Attempting to use alternate WLF file "./wlftkzcyz9".
+#           Attempting to use alternate WLF file "./wlftkkx2ws".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftkzcyz9
+#           Using alternate file: ./wlftkkx2ws
 # 
-run 50ns
-# End time: 10:29:49 on Jul 31,2018, Elapsed time: 0:00:32
+run 100ns
+run 100ns
+# End time: 14:26:53 on Aug 05,2018, Elapsed time: 0:00:55
 # Errors: 0, Warnings: 2

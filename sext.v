@@ -9,12 +9,10 @@
 *  Author: Patrick Reynolds
 */
 
-module sext (
+module sext #(parameter WIDTH = 7) (
 in,
 out
 );
-
-parameter WIDTH = 7;
 
 input [WIDTH-1:0] in;
 output [15:0] out;

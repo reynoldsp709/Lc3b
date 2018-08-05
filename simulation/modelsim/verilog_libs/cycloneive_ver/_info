@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/reyno/Documents/Summer 2018 Computer Architecture/SummerComputerArchitecture/simulation/modelsim
 vcycloneive_and1
-Z1 !s110 1533047352
+Z1 !s110 1533493555
 !i10b 1
 !s100 oT]7FkABD[F088N@X^z8]0
 IZ<JoH;eDHJL_96Bg_ZObM1
@@ -23,7 +23,7 @@ Z6 OP;L;10.4a;61
 r1
 !s85 0
 31
-Z7 !s108 1533047352.000000
+Z7 !s108 1533493555.000000
 Z8 !s107 d:/altera-master/altera/13.0sp1/quartus/eda/sim_lib/cycloneive_atoms.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|cycloneive_ver|d:/altera-master/altera/13.0sp1/quartus/eda/sim_lib/cycloneive_atoms.v|
 !s101 -O0

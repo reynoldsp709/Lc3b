@@ -13,21 +13,37 @@
 
 module control (
 	clk_50,
-	state,
-	gatepc,
-	gatemdr,
+	r,
+	ir,
+	bus,
+	pcmux,
+	addr1mux,
+	addr2mux,
+	sr2mux,
+	marmux,
+	aluk,
+	sr1,
+	sr2,
+	n,
+	z,
+	p,
 	ldmar,
+	ldmdr,
 	ldpc,
 	ldir,
 	ldmdr,
 	ldcc,
+	ldreg,
 	ben,
-	ir,
-	n,
-	z,
-	p,
-	r,
-	bus
+	gatepc,
+	gatemdr,
+	gatealu,
+	gateshf,
+	gatemarmux,
+	rw,
+	datasize,
+	dr,
+	lshf
 );
 
 input clk_50, r;
@@ -40,8 +56,9 @@ output reg marmux;
 output reg aluk;
 output reg [2:0] sr1;
 output reg [2:0] sr2;
+output reg [2:0] dr;
 reg [5:0] state;
-reg n, z, p, ldmar, ldpc, ldir, ldmdr, ldcc, ben, gatepc, gatemdr;
+output reg n, z, p, ldmar, ldmdr, ldpc, ldir, ldcc, ldreg, ben, gatepc, gatemdr, gatealu, gateshf, gatemarmux, rw, datasize, lshf;
 
 always @(posedge clk_50) begin
 	if (ldcc == 1) begin
@@ -275,6 +292,48 @@ always @(posedge clk_50) begin
 		ldpc <= 1;
 		state <= 6'd18;
 	end
+	6'd2: begin
+		ldmar <= 1;
+		lshf <= 1;
+		addr1mux <= 0;
+		addr2mux <= 2'd2;
+		marmux <= 1;
+		gatemarmux <= 1;
+		ldcc <= 1;
+		state <= 6'd29;
+	end
+	6'd29: begin
+		ldmdr <= 1;
+		datasize <= 1;
+		if (r)
+			state <= 6'd31;
+		else
+			state <= 6'd29;
+	end
+	6'd31: begin
+		ldreg <= 1;
+		dr <= ir[11:9];
+		ldcc <= 1;
+		gatemdr <= 1;
+		state <= 6'd18;
+	end
+	6'd3: begin
+		ldmar <= 1;
+		lshf <= 1;
+		addr1mux <= 0;
+		addr2mux <= 2'd2;
+		marmux <= 1;
+		gatemarmux <= 1;
+		ldcc <= 1;
+		state <= 6'd24;
+	end
+	6'd24: begin
+		ldmdr <= 1;
+		sr1 <= ir[8:6];
+		aluk <= 2'd3;
+		gatealu <= 1;
+		state <= 6'd17;
+	end
 endcase
-
+end
 endmodule
