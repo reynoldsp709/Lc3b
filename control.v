@@ -31,10 +31,8 @@ module control (
 	ldmdr,
 	ldpc,
 	ldir,
-	ldmdr,
 	ldcc,
 	ldreg,
-	ben,
 	gatepc,
 	gatemdr,
 	gatealu,
@@ -58,7 +56,8 @@ output reg [2:0] sr1;
 output reg [2:0] sr2;
 output reg [2:0] dr;
 reg [5:0] state;
-output reg n, z, p, ldmar, ldmdr, ldpc, ldir, ldcc, ldreg, ben, gatepc, gatemdr, gatealu, gateshf, gatemarmux, rw, datasize, lshf;
+reg n, z, p, ben;
+output reg ldmar, ldmdr, ldpc, ldir, ldcc, ldreg, gatepc, gatemdr, gatealu, gateshf, gatemarmux, rw, datasize, lshf;
 
 always @(posedge clk_50) begin
 	// Set control codes
@@ -109,6 +108,7 @@ always @(posedge clk_50) begin
 	// Increment PC
 	6'd19: begin
 		ldpc <= 1;
+		pcmux <= 2'd2;
 		state <= 6'd33;
 	end
 	// Load bus value from memory into MDR, wait for R

@@ -36,13 +36,215 @@ module LC_3b(
 //  REG/WIRE declarations
 //=======================================================
 
-
-
+reg [15:0] pcmux_out, addr2mux_out, alu_out, shf_out, bus;
+reg gatemarmux_en, gatepc_en, gateshf_en, gatealu_en, gatemdr_en, marmux_sel, addr1mux_sel, sr2mux_sel, ldmar, ldmdr, ldpc, ldir, ldcc, ldreg, r, rw, datasize, dr, lshf;
+reg [1:0] pcmux_sel, addr2mux_sel, aluk;
+reg [2:0] sr1, sr2, dr;
+wire [15:0] zext_out, sr1_out, sr2_out, marmux_out, addr1mux_out, sr2mux_out, pcinc_out, adder_out, addr2_lshf1_out, zext_lshf_out, ir_out;
+wire [10:0] sext11_out;
+wire [8:0] sext9_out;
+wire [5:0] sext6_out;
+wire [4:0] sext5_out;
 
 //=======================================================
 //  Structural coding
 //=======================================================
 
+gate gateMARMUX0 (
+	.enable	(gatemarmux_en),
+	.in		(marmux_out),
+	.out		(bus)
+);
 
+// gate gateMARMUX(enable, in, out); ?
+
+gate gatePC0 (
+	.enable	(gatepc_en),
+	.in		(pc_out),
+	.out		(bus)
+);
+
+gate gateSHF0 (
+	.enable	(gateshf_en),
+	.in		(shf_out),
+	.out		(bus)
+);
+
+gate gateALU0 (
+	.enable	(gatealu_en),
+	.in		(alu_out),
+	.out		(bus)
+);
+
+gate gateMDR0 (
+	.enable	(gatemdr_en),
+	.in		(mdr),
+	.out		(bus)
+);
+
+pcinc pcinc2 (
+	.in		(pc_out),
+	.out		(pcinc_out)
+);
+
+mux2 marmux (
+	.in0		(zext_out),
+	.in1		(adder_out),
+	.select	(marmux_sel),
+	.out		(marmux_out)
+);
+
+mux3 pcmux (
+	.in0		(bus),
+	.in1		(adder_out),
+	.in2		(pcinc_out),
+	.select	(pcmux_sel),
+	.out		(pcmux_out)
+);
+
+mux2 addr1mux (
+	.in0		(sr1_out),
+	.in1		(pc_out),
+	.select	(addr1mux_sel),
+	.out		(addr1mux_out)
+);
+
+mux4 addr2mux (
+	.in0		(sext11_out),
+	.in1		(sext9_out),
+	.in2		(sext6_out),
+	.in3		(zero),
+	.select	(addr2mux_sel),
+	.out		(addr2mux_out)
+);
+
+mux2 sr2mux (
+	.in0		(sr2_out),
+	.in1		(sext5_out),
+	.select	(sr2mux_sel),
+	.out		(sr2mux_out)
+);
+
+pc pc0 (
+	.in		(pcmux_out),
+	.load		(ldpc),
+	.out		(pc_out)
+);
+
+adder adder0 (
+	.a			(addr2_lshf1_out),
+	.b			(addr1mux_out),
+	.out		(adder_out)
+);
+
+
+lshf1 addr2_lshf1 (
+	.in		(addr2mux_out),
+	.enable	(lshf),
+	.out		(addr2_lshf1_out)
+);
+
+lshf1 zext_lshf1 (
+	.in		(zext_out),
+	.enable	(lshf),
+	.out		(zext_lshf_out)
+);
+
+ir ir0 (
+	.in		(bus),
+	.load		(ldir),
+	.out		(ir_out)
+);
+
+sext #(11) sext11 (
+	.in		(ir_out[10:0]),
+	.out		(sext11_out)
+);
+
+sext #(9) sext9 (
+	.in		(ir_out[8:0]),
+	.out		(sext9_out)
+);
+
+sext #(6) sext6 (
+	.in		(ir_out[5:0]),
+	.out		(sext6_out)
+);
+
+sext #(5) sext5 (
+	.in		(ir_out[4:0]),
+	.out		(sext5_out)
+);
+
+zext zext0 (
+	.in		(ir_out[7:0]),
+	.out		(zext_out)
+);
+
+regfile regfile0 (
+	.in		(bus),
+	.clk_50	(CLK_50),
+	.sr1		(sr1),
+	.sr2		(sr2),
+	.dr		(dr),
+	.ldreg	(ldreg),
+	.sr1_out	(sr1_out),
+	.sr2_out	(sr2_out)
+);
+
+alu alu0 (
+	.aluk		(aluk),
+	.a			(sr1_out),
+	.b			(sr2mux_out),
+	.result	(alu_out)
+);
+
+shift shf (
+	.a			(ir_out[5]),
+	.d			(ir_out[4]),
+	.amt		(ir_out[3:0]),
+	.in		(sr1_out),
+	.out		(shf_out)
+);
+
+control control0 (
+	.clk_50		(CLK_50),
+	.r				(r),
+	.ir			(ir_out),
+	.bus			(bus),
+	.pcmux		(pcmux_sel),
+	.addr1mux	(addr1mux_sel),
+	.addr2mux	(addr2mux_sel),
+	.sr2mux		(sr2mux_sel),
+	.marmux		(marmux_sel),
+	.aluk			(aluk),
+	.sr1			(sr1),
+	.sr2			(sr2),
+	.ldmar		(ldmar),
+	.ldmdr		(ldmdr),
+	.ldpc			(ldpc),
+	.ldir			(ldir),		
+	.ldcc			(ldcc),
+	.ldreg		(ldreg),
+	.gatepc		(gatepc_en),
+	.gatemarmux	(gatemarmux_en),
+	.gateshf		(gateshf_en),
+	.gatealu		(gatealu_en),
+	.gatemdr		(gatemdr_en),
+	.rw			(rw),
+	.datasize	(datasize),
+	.dr			(dr),
+	.lshf			(lshf)
+);
+
+memory memory0 (
+	.clk_50		(CLK_50),
+   .ldMar		(ldmar),
+   .ldMdr		(ldmdr),
+	.rw			(rw),
+	.datasize	(datasize),
+	.bus			(bus),
+   .r				(r)
+);
 
 endmodule

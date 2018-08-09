@@ -1,0 +1,36 @@
+module ir (
+	in,
+	load,
+	out,
+	out11,
+	out9,
+	out6,
+	out5
+);
+
+input [15:0] in;
+input load;
+output [15:0] out;
+output [10:0] out11;
+output [8:0] out9;
+output [5:0] out6;
+output [4:0] out5;
+
+always @(*) begin
+	if (load) begin
+		out = in;
+		out11 = in[10:0];
+		out9 = in[8:0];
+		out6 = in[5:0];
+		out5 = in[4:0];
+	end
+	else begin
+		out = 1'bz;
+		out11 = 1'bz;
+		out9 = 1'bz;
+		out6 = 1'bz;
+		out5 = 1'bz;
+	end
+end
+
+endmodule

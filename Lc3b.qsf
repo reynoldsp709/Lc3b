@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE22F17C6
-set_global_assignment -name TOP_LEVEL_ENTITY sext
+set_global_assignment -name TOP_LEVEL_ENTITY memory
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:02:15  JUNE 23, 2018"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
@@ -52,9 +52,8 @@ set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name VERILOG_FILE memory.v
 set_global_assignment -name VERILOG_FILE control.v
-set_global_assignment -name VERILOG_FILE mux16.v
-set_global_assignment -name VERILOG_FILE fsm_using_always.v
 set_global_assignment -name VERILOG_FILE ../LC_3b.v
 set_global_assignment -name VERILOG_FILE zext.v
 set_global_assignment -name VERILOG_FILE sext.v
@@ -62,13 +61,17 @@ set_global_assignment -name VERILOG_FILE regfile.v
 set_global_assignment -name VERILOG_FILE alu.v
 set_global_assignment -name VERILOG_FILE shift.v
 set_global_assignment -name VERILOG_FILE gate.v
-set_global_assignment -name VERILOG_FILE gateshf.v
-set_global_assignment -name VERILOG_FILE gatealu.v
-set_global_assignment -name VERILOG_FILE gatemarmux.v
-set_global_assignment -name VERILOG_FILE gatepc.v
-set_global_assignment -name VERILOG_FILE gatemdr.v
+set_global_assignment -name VERILOG_FILE sextfnc.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name VERILOG_FILE sextfnc.v
+set_global_assignment -name VERILOG_FILE marmux.v
+set_global_assignment -name VERILOG_FILE mux2.v
+set_global_assignment -name VERILOG_FILE mux3.v
+set_global_assignment -name VERILOG_FILE pcinc.v
+set_global_assignment -name VERILOG_FILE mux4.v
+set_global_assignment -name VERILOG_FILE pc.v
+set_global_assignment -name VERILOG_FILE adder.v
+set_global_assignment -name VERILOG_FILE lshf1.v
+set_global_assignment -name VERILOG_FILE ir.v
