@@ -1,13 +1,28 @@
-// Make a memory module
+/* Module: memory();
+*
+*  Parameter:
+*      In:      clk_50 - Clock
+*               bus - 16-bit input from bus
+*               ldMar - 1-bit load-enable control signal (MAR)
+*               ldMdr - 1-bit load-enable control signal (MDR)
+*               datasize - 1-bit control signal for load/store byte instructions
+*               rw - 1-bit read/write control signal
+*      Out:     r - 1-bit memory-ready output value
+*
+*  Description: The module implements a 8x16 memory array to load and store instructions
+*               and values for use in the LC-3b microarchitecture.
+*
+*  Author: Patrick Reynolds
+*/
 
 module memory (
     clk_50,
+	 bus,
     ldMar,
     ldMdr,
-    r,
+    datasize, // 1 means 8 bits, 0 means 16
     rw,
-    bus,
-    datasize // 1 means 8 bits, 0 means 16
+    r
 );
 
 input clk_50;

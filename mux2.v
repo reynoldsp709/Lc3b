@@ -1,11 +1,12 @@
 /* Module: mux2();
 *
 *  Parameter:
-*      In:      in - 16-bit input value to be selected from
-*               select - 3-bit select line that sends the corresponding bit value to the output
+*      In:      in0 - First 16-bit input value
+*               in1 - Second 16-bit input value
+*               select - 1-bit select line that sends the corresponding input value to the output
 *      Out:     out - 1-bit output value bit selected from 'in'
 *
-*  Description: The module outputs the variable width input number padded to 16-bits with its sign bit value.
+*  Description: The module outputs one of two 16-bit input values based on the select value.
 *
 *  Author: Patrick Reynolds
 */

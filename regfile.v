@@ -10,8 +10,8 @@
 *      Out:     sr1_out - Value read from first source register
 *               sr2_out - Value read from second source register
 *
-*  Description: The module implements an 16x8 2-dimensional array to 
-*               output values located at two memory registers and write to memory registers.
+*  Description: The module implements a 16x8 array to output values located
+*               at two memory registers and write to memory registers.
 *
 *  Author: Patrick Reynolds
 */

@@ -1,3 +1,14 @@
+/* Module: pcinc();
+*
+*  Parameter:
+*      In:      in - 16-bit input value
+*      Out:     out - 16-bit incremented output value
+*
+*  Description: The module outputs the input value incremented by 2.
+*
+*  Author: Patrick Reynolds
+*/
+
 module pcinc (
 	in,
 	out

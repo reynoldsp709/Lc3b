@@ -1,3 +1,15 @@
+/* Module: pc();
+*
+*  Parameter:
+*      In:      in - 16-bit input value
+*               load - 1-bit load-enable control signal
+*      Out:     out - 16-bit incremented output value
+*
+*  Description: The module outputs the input value or high impedance depending on the load value.
+*
+*  Author: Patrick Reynolds
+*/
+
 module pc (
 	in,
 	load,

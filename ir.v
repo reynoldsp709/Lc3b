@@ -1,3 +1,15 @@
+/* Module: ir();
+*
+*  Parameter:
+*      In:      in - 16-bit input value
+*               load - 1-bit load-enable control signal
+*      Out:     out - 16-bit incremented output value
+*
+*  Description: The module outputs the input value incremented by 2.
+*
+*  Author: Patrick Reynolds
+*/
+
 module ir (
 	in,
 	load,

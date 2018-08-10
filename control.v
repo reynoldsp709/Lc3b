@@ -1,8 +1,33 @@
 /* Module: control();
 *
 *  Parameter:
-*      In:
-*      Out:
+*      In:      clk_50 - Clock
+*               r - 1-bit memory-ready input value
+*               ir - 16-bit instruction register
+*               bus - 16-bit bus input value
+*      Out:     pcmux - 2-bit mux-select control signal
+*               addr1mux - 1-bit mux-select control signal
+*               addr2mux - 2-bit mux-select control signal
+*               sr2mux - 1-bit mux-select control signal
+*               marmux - 1-bit mux-select control signal
+*               aluk - 2-bit ALU function control signal
+*               sr1 - Address of first source register to read
+*               sr2 - Address of second source register to read
+*               dr - Address of the destination register
+*               ldmar - 1-bit load-enable control signal
+*               ldmdr - 1-bit load-enable control signal
+*               ldpc - 1-bit load-enable control signal
+*               ldir - 1-bit load-enable control signal
+*               ldcc - 1-bit load-enable control signal
+*               ldreg - 1-bit load-enable control signal
+*               gatepc - 1-bit gate-enable control signal
+*               gatemdr - 1-bit gate-enable control signal
+*               gatealu - 1-bit gate-enable control signal
+*               gateshf - 1-bit gate-enable control signal
+*               gatemarmux - 1-bit gate-enable control signal
+*               rw - 1-bit read/write control signal
+*               datasize - 1-bit control signal for load/store byte instructions
+*               lshf - 1-bit shift-enable control signal
 *
 *  Description: The module acts as a control unit for the LC-3b architecture. 
 *               Sets gates and select lines along the datapath, and updates the state
@@ -46,18 +71,11 @@ module control (
 
 input clk_50, r;
 input [15:0] ir, bus;
-output reg [1:0] pcmux;
-output reg addr1mux;
-output reg [1:0] addr2mux;
-output reg sr2mux;
-output reg marmux;
-output reg aluk;
-output reg [2:0] sr1;
-output reg [2:0] sr2;
-output reg [2:0] dr;
-reg [5:0] state;
+output reg addr1mux, sr2mux, marmux, ldmar, ldmdr, ldpc, ldir, ldcc, ldreg, gatepc, gatemdr, gatealu, gateshf, gatemarmux, rw, datasize, lshf;
+output reg [1:0] pcmux, addr2mux, aluk;
+output reg [2:0] sr1, sr2, dr;
 reg n, z, p, ben;
-output reg ldmar, ldmdr, ldpc, ldir, ldcc, ldreg, gatepc, gatemdr, gatealu, gateshf, gatemarmux, rw, datasize, lshf;
+reg [5:0] state;
 
 always @(posedge clk_50) begin
 	// Set control codes
