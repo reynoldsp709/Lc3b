@@ -11,15 +11,24 @@
 */
 
 module ir (
+	clock_50,
 	in,
 	load,
 	out
 );
 
 input [15:0] in;
-input load;
-output [15:0] out;
+input clock_50, load;
+output reg [15:0] out;
 
-assign out = load ? 1'bz : in;
+always @(posedge clock_50) begin
+	if (load == 1) begin
+		out <= in;
+	end
+end
+
+initial begin
+	out = 0;
+end
 
 endmodule

@@ -24,14 +24,6 @@ input [15:0] in0, in1, in2;
 input [1:0] select;
 output [15:0] out;
 
-always @(*) begin
-	case(select)
-		2'd0: 
-			out <= in0;
-		2'd1:
-			out <= in1;
-		2'd2:
-			out <= in2;
-	endcase
-end
+assign out = (select == 0) ? in0 : (select == 1) ? in1 : (select == 2) ? in2 : 0;
+
 endmodule

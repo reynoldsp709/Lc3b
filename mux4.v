@@ -24,7 +24,7 @@ module mux4 (
 
 input [15:0] in0, in1, in2, in3;
 input [1:0] select;
-output [15:0] out;
+output reg [15:0] out;
 
 always @(*) begin
 	case(select)

@@ -1,586 +1,450 @@
-# Reading D:/altera-master/Modeltech_pe_edu_10.4a/tcl/vsim/pref.tcl
-# do Lc3b_run_msim_rtl_verilog.do
-# if ![file isdirectory verilog_libs] {
-# 	file mkdir verilog_libs
-# }
-# 
-# vlib verilog_libs/altera_ver
-# ** Warning: (vlib-34) Library already exists at "verilog_libs/altera_ver".
-# 
-# vmap altera_ver ./verilog_libs/altera_ver
-# Model Technology ModelSim PE vmap 10.4a Lib Mapping Utility 2015.03 Apr  7 2015
-# vmap -modelsim_quiet altera_ver ./verilog_libs/altera_ver 
-# Copying D:/altera-master/Modeltech_pe_edu_10.4a/win32pe_edu/../modelsim.ini to modelsim.ini
-# Modifying modelsim.ini
-# ** Warning: Copied D:/altera-master/Modeltech_pe_edu_10.4a/win32pe_edu/../modelsim.ini to modelsim.ini.
-#          Updated modelsim.ini.
-# vlog -vlog01compat -work altera_ver {d:/altera-master/altera/13.0sp1/quartus/eda/sim_lib/altera_primitives.v}
-# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 14:25:50 on Aug 05,2018
-# vlog -reportprogress 300 -vlog01compat -work altera_ver d:/altera-master/altera/13.0sp1/quartus/eda/sim_lib/altera_primitives.v 
-# -- Compiling module global
-# -- Compiling module carry
-# -- Compiling module cascade
-# -- Compiling module carry_sum
-# -- Compiling module exp
-# -- Compiling module soft
-# -- Compiling module opndrn
-# -- Compiling module row_global
-# -- Compiling module TRI
-# -- Compiling module lut_input
-# -- Compiling module lut_output
-# -- Compiling module latch
-# -- Compiling module dlatch
-# -- Compiling module prim_gdff
-# -- Compiling module dff
-# -- Compiling module dffe
-# -- Compiling module dffea
-# -- Compiling module dffeas
-# -- Compiling module prim_gtff
-# -- Compiling module tff
-# -- Compiling module tffe
-# -- Compiling module prim_gjkff
-# -- Compiling module jkff
-# -- Compiling module jkffe
-# -- Compiling module prim_gsrff
-# -- Compiling module srff
-# -- Compiling module srffe
-# -- Compiling module clklock
-# -- Compiling module alt_inbuf
-# -- Compiling module alt_outbuf
-# -- Compiling module alt_outbuf_tri
-# -- Compiling module alt_iobuf
-# -- Compiling module alt_inbuf_diff
-# -- Compiling module alt_outbuf_diff
-# -- Compiling module alt_outbuf_tri_diff
-# -- Compiling module alt_iobuf_diff
-# -- Compiling module alt_bidir_diff
-# -- Compiling module alt_bidir_buf
-# -- Compiling UDP PRIM_GDFF_LOW
-# -- Compiling UDP PRIM_GDFF_HIGH
-# 
-# Top level modules:
-# 	global
-# 	carry
-# 	cascade
-# 	carry_sum
-# 	exp
-# 	soft
-# 	opndrn
-# 	row_global
-# 	TRI
-# 	lut_input
-# 	lut_output
-# 	latch
-# 	dlatch
-# 	dff
-# 	dffe
-# 	dffea
-# 	dffeas
-# 	tff
-# 	tffe
-# 	jkff
-# 	jkffe
-# 	srff
-# 	srffe
-# 	clklock
-# 	alt_inbuf
-# 	alt_outbuf
-# 	alt_outbuf_tri
-# 	alt_iobuf
-# 	alt_inbuf_diff
-# 	alt_outbuf_diff
-# 	alt_outbuf_tri_diff
-# 	alt_iobuf_diff
-# 	alt_bidir_diff
-# 	alt_bidir_buf
-# End time: 14:25:51 on Aug 05,2018, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# 
-# vlib verilog_libs/lpm_ver
-# ** Warning: (vlib-34) Library already exists at "verilog_libs/lpm_ver".
-# 
-# vmap lpm_ver ./verilog_libs/lpm_ver
-# Model Technology ModelSim PE vmap 10.4a Lib Mapping Utility 2015.03 Apr  7 2015
-# vmap -modelsim_quiet lpm_ver ./verilog_libs/lpm_ver 
-# Modifying modelsim.ini
-# vlog -vlog01compat -work lpm_ver {d:/altera-master/altera/13.0sp1/quartus/eda/sim_lib/220model.v}
-# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 14:25:52 on Aug 05,2018
-# vlog -reportprogress 300 -vlog01compat -work lpm_ver d:/altera-master/altera/13.0sp1/quartus/eda/sim_lib/220model.v 
-# -- Compiling module LPM_MEMORY_INITIALIZATION
-# -- Compiling module LPM_HINT_EVALUATION
-# -- Compiling module LPM_DEVICE_FAMILIES
-# -- Compiling module lpm_constant
-# -- Compiling module lpm_inv
-# -- Compiling module lpm_and
-# -- Compiling module lpm_or
-# -- Compiling module lpm_xor
-# -- Compiling module lpm_bustri
-# -- Compiling module lpm_mux
-# -- Compiling module lpm_decode
-# -- Compiling module lpm_clshift
-# -- Compiling module lpm_add_sub
-# -- Compiling module lpm_compare
-# -- Compiling module lpm_mult
-# -- Compiling module lpm_divide
-# -- Compiling module lpm_abs
-# -- Compiling module lpm_counter
-# -- Compiling module lpm_latch
-# -- Compiling module lpm_ff
-# -- Compiling module lpm_shiftreg
-# -- Compiling module lpm_ram_dq
-# -- Compiling module lpm_ram_dp
-# -- Compiling module lpm_ram_io
-# -- Compiling module lpm_rom
-# -- Compiling module lpm_fifo
-# -- Compiling module lpm_fifo_dc_dffpipe
-# -- Compiling module lpm_fifo_dc_fefifo
-# -- Compiling module lpm_fifo_dc_async
-# -- Compiling module lpm_fifo_dc
-# -- Compiling module lpm_inpad
-# -- Compiling module lpm_outpad
-# -- Compiling module lpm_bipad
-# 
-# Top level modules:
-# 	lpm_constant
-# 	lpm_inv
-# 	lpm_and
-# 	lpm_or
-# 	lpm_xor
-# 	lpm_bustri
-# 	lpm_mux
-# 	lpm_decode
-# 	lpm_clshift
-# 	lpm_add_sub
-# 	lpm_compare
-# 	lpm_mult
-# 	lpm_divide
-# 	lpm_abs
-# 	lpm_counter
-# 	lpm_latch
-# 	lpm_ff
-# 	lpm_shiftreg
-# 	lpm_ram_dq
-# 	lpm_ram_dp
-# 	lpm_ram_io
-# 	lpm_rom
-# 	lpm_fifo
-# 	lpm_fifo_dc
-# 	lpm_inpad
-# 	lpm_outpad
-# 	lpm_bipad
-# End time: 14:25:52 on Aug 05,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vlib verilog_libs/sgate_ver
-# ** Warning: (vlib-34) Library already exists at "verilog_libs/sgate_ver".
-# 
-# vmap sgate_ver ./verilog_libs/sgate_ver
-# Model Technology ModelSim PE vmap 10.4a Lib Mapping Utility 2015.03 Apr  7 2015
-# vmap -modelsim_quiet sgate_ver ./verilog_libs/sgate_ver 
-# Modifying modelsim.ini
-# vlog -vlog01compat -work sgate_ver {d:/altera-master/altera/13.0sp1/quartus/eda/sim_lib/sgate.v}
-# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 14:25:52 on Aug 05,2018
-# vlog -reportprogress 300 -vlog01compat -work sgate_ver d:/altera-master/altera/13.0sp1/quartus/eda/sim_lib/sgate.v 
-# -- Compiling module oper_add
-# -- Compiling module oper_addsub
-# -- Compiling module mux21
-# -- Compiling module io_buf_tri
-# -- Compiling module io_buf_opdrn
-# -- Compiling module oper_mult
-# -- Compiling module tri_bus
-# -- Compiling module oper_div
-# -- Compiling module oper_mod
-# -- Compiling module oper_left_shift
-# -- Compiling module oper_right_shift
-# -- Compiling module oper_rotate_left
-# -- Compiling module oper_rotate_right
-# -- Compiling module oper_less_than
-# -- Compiling module oper_mux
-# -- Compiling module oper_selector
-# -- Compiling module oper_decoder
-# -- Compiling module oper_bus_mux
-# -- Compiling module oper_latch
-# 
-# Top level modules:
-# 	oper_add
-# 	oper_addsub
-# 	mux21
-# 	io_buf_tri
-# 	io_buf_opdrn
-# 	oper_mult
-# 	tri_bus
-# 	oper_div
-# 	oper_mod
-# 	oper_left_shift
-# 	oper_right_shift
-# 	oper_rotate_left
-# 	oper_rotate_right
-# 	oper_less_than
-# 	oper_mux
-# 	oper_selector
-# 	oper_decoder
-# 	oper_bus_mux
-# 	oper_latch
-# End time: 14:25:52 on Aug 05,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vlib verilog_libs/altera_mf_ver
-# ** Warning: (vlib-34) Library already exists at "verilog_libs/altera_mf_ver".
-# 
-# vmap altera_mf_ver ./verilog_libs/altera_mf_ver
-# Model Technology ModelSim PE vmap 10.4a Lib Mapping Utility 2015.03 Apr  7 2015
-# vmap -modelsim_quiet altera_mf_ver ./verilog_libs/altera_mf_ver 
-# Modifying modelsim.ini
-# vlog -vlog01compat -work altera_mf_ver {d:/altera-master/altera/13.0sp1/quartus/eda/sim_lib/altera_mf.v}
-# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 14:25:52 on Aug 05,2018
-# vlog -reportprogress 300 -vlog01compat -work altera_mf_ver d:/altera-master/altera/13.0sp1/quartus/eda/sim_lib/altera_mf.v 
-# -- Compiling module lcell
-# -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
-# -- Compiling module ALTERA_MF_HINT_EVALUATION
-# -- Compiling module ALTERA_DEVICE_FAMILIES
-# -- Compiling module dffp
-# -- Compiling module pll_iobuf
-# -- Compiling module stx_m_cntr
-# -- Compiling module stx_n_cntr
-# -- Compiling module stx_scale_cntr
-# -- Compiling module MF_pll_reg
-# -- Compiling module MF_stratix_pll
-# -- Compiling module arm_m_cntr
-# -- Compiling module arm_n_cntr
-# -- Compiling module arm_scale_cntr
-# -- Compiling module MF_stratixii_pll
-# -- Compiling module ttn_m_cntr
-# -- Compiling module ttn_n_cntr
-# -- Compiling module ttn_scale_cntr
-# -- Compiling module MF_stratixiii_pll
-# -- Compiling module cda_m_cntr
-# -- Compiling module cda_n_cntr
-# -- Compiling module cda_scale_cntr
-# -- Compiling module MF_cycloneiii_pll
-# -- Compiling module MF_cycloneiiigl_m_cntr
-# -- Compiling module MF_cycloneiiigl_n_cntr
-# -- Compiling module MF_cycloneiiigl_scale_cntr
-# -- Compiling module cycloneiiigl_post_divider
-# -- Compiling module MF_cycloneiiigl_pll
-# -- Compiling module altpll
-# -- Compiling module altlvds_rx
-# -- Compiling module stratix_lvds_rx
-# -- Compiling module stratixgx_dpa_lvds_rx
-# -- Compiling module stratixii_lvds_rx
-# -- Compiling module flexible_lvds_rx
-# -- Compiling module stratixiii_lvds_rx
-# -- Compiling module stratixiii_lvds_rx_channel
-# -- Compiling module stratixiii_lvds_rx_dpa
-# -- Compiling module altlvds_tx
-# -- Compiling module stratixv_local_clk_divider
-# -- Compiling module stratix_tx_outclk
-# -- Compiling module stratixii_tx_outclk
-# -- Compiling module flexible_lvds_tx
-# -- Compiling module dcfifo_dffpipe
-# -- Compiling module dcfifo_fefifo
-# -- Compiling module dcfifo_async
-# -- Compiling module dcfifo_sync
-# -- Compiling module dcfifo_low_latency
-# -- Compiling module dcfifo_mixed_widths
-# -- Compiling module dcfifo
-# -- Compiling module altaccumulate
-# -- Compiling module altmult_accum
-# -- Compiling module altmult_add
-# -- Compiling module altfp_mult
-# -- Compiling module altsqrt
-# -- Compiling module altclklock
-# -- Compiling module altddio_in
-# -- Compiling module altddio_out
-# -- Compiling module altddio_bidir
-# -- Compiling module altdpram
-# -- Compiling module altsyncram
-# -- Compiling module alt3pram
-# -- Compiling module parallel_add
-# -- Compiling module scfifo
-# -- Compiling module altshift_taps
-# -- Compiling module a_graycounter
-# -- Compiling module altsquare
-# -- Compiling module altera_std_synchronizer
-# -- Compiling module altera_std_synchronizer_bundle
-# -- Compiling module alt_cal
-# -- Compiling module alt_cal_mm
-# -- Compiling module alt_cal_c3gxb
-# -- Compiling module alt_cal_sv
-# -- Compiling module alt_cal_av
-# -- Compiling module alt_aeq_s4
-# -- Compiling module alt_eyemon
-# -- Compiling module alt_dfe
-# -- Compiling module signal_gen
-# -- Compiling module jtag_tap_controller
-# -- Compiling module dummy_hub
-# -- Compiling module sld_virtual_jtag
-# -- Compiling module sld_signaltap
-# -- Compiling module altstratixii_oct
-# -- Compiling module altparallel_flash_loader
-# -- Compiling module altserial_flash_loader
-# -- Compiling module sld_virtual_jtag_basic
-# -- Compiling module altsource_probe
-# 
-# Top level modules:
-# 	lcell
-# 	altpll
-# 	altlvds_rx
-# 	altlvds_tx
-# 	dcfifo
-# 	altaccumulate
-# 	altmult_accum
-# 	altmult_add
-# 	altfp_mult
-# 	altsqrt
-# 	altclklock
-# 	altddio_bidir
-# 	altdpram
-# 	alt3pram
-# 	parallel_add
-# 	scfifo
-# 	altshift_taps
-# 	a_graycounter
-# 	altsquare
-# 	altera_std_synchronizer_bundle
-# 	alt_cal
-# 	alt_cal_mm
-# 	alt_cal_c3gxb
-# 	alt_cal_sv
-# 	alt_cal_av
-# 	alt_aeq_s4
-# 	alt_eyemon
-# 	alt_dfe
-# 	sld_virtual_jtag
-# 	sld_signaltap
-# 	altstratixii_oct
-# 	altparallel_flash_loader
-# 	altserial_flash_loader
-# 	sld_virtual_jtag_basic
-# 	altsource_probe
-# End time: 14:25:54 on Aug 05,2018, Elapsed time: 0:00:02
-# Errors: 0, Warnings: 0
-# 
-# vlib verilog_libs/altera_lnsim_ver
-# ** Warning: (vlib-34) Library already exists at "verilog_libs/altera_lnsim_ver".
-# 
-# vmap altera_lnsim_ver ./verilog_libs/altera_lnsim_ver
-# Model Technology ModelSim PE vmap 10.4a Lib Mapping Utility 2015.03 Apr  7 2015
-# vmap -modelsim_quiet altera_lnsim_ver ./verilog_libs/altera_lnsim_ver 
-# Modifying modelsim.ini
-# vlog -sv -work altera_lnsim_ver {d:/altera-master/altera/13.0sp1/quartus/eda/sim_lib/altera_lnsim.sv}
-# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 14:25:54 on Aug 05,2018
-# vlog -reportprogress 300 -sv -work altera_lnsim_ver d:/altera-master/altera/13.0sp1/quartus/eda/sim_lib/altera_lnsim.sv 
-# -- Compiling package altera_lnsim_functions
-# -- Compiling module altera_pll
-# -- Importing package altera_lnsim_functions
-# -- Compiling module dps_extra_kick
-# -- Compiling module dprio_init
-# -- Compiling module pll_dps_lcell_comb
-# -- Compiling module altera_stratixv_pll
-# -- Compiling module altera_arriav_pll
-# -- Compiling module altera_arriavgz_pll
-# -- Compiling module altera_cyclonev_pll
-# -- Compiling package altera_generic_pll_functions
-# -- Compiling module generic_pll
-# -- Importing package altera_generic_pll_functions
-# -- Compiling module generic_cdr
-# -- Compiling module common_28nm_ram_pulse_generator
-# -- Compiling module common_28nm_ram_register
-# -- Compiling module common_28nm_ram_block
-# -- Compiling module generic_m20k
-# -- Compiling module generic_m10k
-# -- Compiling module common_28nm_mlab_cell_pulse_generator
-# -- Compiling module common_28nm_mlab_latch
-# -- Compiling module common_28nm_mlab_cell_core
-# -- Compiling module common_porta_latches
-# -- Compiling module generic_28nm_hp_mlab_cell_impl
-# -- Compiling module common_porta_registers
-# -- Compiling module generic_28nm_lc_mlab_cell_impl
-# -- Compiling module generic_mux
-# -- Compiling module generic_device_pll
-# -- Compiling module altera_mult_add
-# -- Compiling module altera_mult_add_rtl
-# -- Compiling module ama_signed_extension_function
-# -- Compiling module ama_dynamic_signed_function
-# -- Compiling module ama_register_function
-# -- Compiling module ama_register_with_ext_function
-# -- Compiling module ama_data_split_reg_ext_function
-# -- Compiling module ama_coef_reg_ext_function
-# -- Compiling module ama_adder_function
-# -- Compiling module ama_multiplier_function
-# -- Compiling module ama_preadder_function
-# -- Compiling module ama_accumulator_function
-# -- Compiling module ama_systolic_adder_function
-# -- Compiling module ama_scanchain
-# -- Compiling module altera_pll_reconfig_tasks
-# 
-# Top level modules:
-# 	altera_pll
-# 	generic_cdr
-# 	generic_m20k
-# 	generic_m10k
-# 	common_porta_latches
-# 	generic_28nm_hp_mlab_cell_impl
-# 	generic_28nm_lc_mlab_cell_impl
-# 	generic_mux
-# 	generic_device_pll
-# 	altera_mult_add
-# 	altera_pll_reconfig_tasks
-# End time: 14:25:55 on Aug 05,2018, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# 
-# vlib verilog_libs/cycloneive_ver
-# ** Warning: (vlib-34) Library already exists at "verilog_libs/cycloneive_ver".
-# 
-# vmap cycloneive_ver ./verilog_libs/cycloneive_ver
-# Model Technology ModelSim PE vmap 10.4a Lib Mapping Utility 2015.03 Apr  7 2015
-# vmap -modelsim_quiet cycloneive_ver ./verilog_libs/cycloneive_ver 
-# Modifying modelsim.ini
-# vlog -vlog01compat -work cycloneive_ver {d:/altera-master/altera/13.0sp1/quartus/eda/sim_lib/cycloneive_atoms.v}
-# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 14:25:55 on Aug 05,2018
-# vlog -reportprogress 300 -vlog01compat -work cycloneive_ver d:/altera-master/altera/13.0sp1/quartus/eda/sim_lib/cycloneive_atoms.v 
-# -- Compiling UDP CYCLONEIVE_PRIM_DFFE
-# -- Compiling UDP CYCLONEIVE_PRIM_DFFEAS
-# -- Compiling UDP CYCLONEIVE_PRIM_DFFEAS_HIGH
-# -- Compiling module cycloneive_dffe
-# -- Compiling module cycloneive_mux21
-# -- Compiling module cycloneive_mux41
-# -- Compiling module cycloneive_and1
-# -- Compiling module cycloneive_and16
-# -- Compiling module cycloneive_bmux21
-# -- Compiling module cycloneive_b17mux21
-# -- Compiling module cycloneive_nmux21
-# -- Compiling module cycloneive_b5mux21
-# -- Compiling module cycloneive_latch
-# -- Compiling module cycloneive_routing_wire
-# -- Compiling module cycloneive_m_cntr
-# -- Compiling module cycloneive_n_cntr
-# -- Compiling module cycloneive_scale_cntr
-# -- Compiling module cycloneive_pll_reg
-# -- Compiling module cycloneive_pll
-# -- Compiling module cycloneive_lcell_comb
-# -- Compiling module cycloneive_ff
-# -- Compiling module cycloneive_ram_pulse_generator
-# -- Compiling module cycloneive_ram_register
-# -- Compiling module cycloneive_ram_block
-# -- Compiling module cycloneive_mac_data_reg
-# -- Compiling module cycloneive_mac_sign_reg
-# -- Compiling module cycloneive_mac_mult_internal
-# -- Compiling module cycloneive_mac_mult
-# -- Compiling module cycloneive_mac_out
-# -- Compiling module cycloneive_io_ibuf
-# -- Compiling module cycloneive_io_obuf
-# -- Compiling module cycloneive_ddio_out
-# -- Compiling module cycloneive_ddio_oe
-# -- Compiling module cycloneive_pseudo_diff_out
-# -- Compiling module cycloneive_io_pad
-# -- Compiling module cycloneive_ena_reg
-# -- Compiling module cycloneive_clkctrl
-# -- Compiling module cycloneive_rublock
-# -- Compiling module cycloneive_apfcontroller
-# -- Compiling module cycloneive_termination_ctrl
-# -- Compiling module cycloneive_termination_rupdn
-# -- Compiling module cycloneive_termination
-# -- Compiling module cycloneive_jtag
-# -- Compiling module cycloneive_crcblock
-# -- Compiling module cycloneive_oscillator
-# 
-# Top level modules:
-# 	cycloneive_dffe
-# 	cycloneive_and1
-# 	cycloneive_and16
-# 	cycloneive_bmux21
-# 	cycloneive_b17mux21
-# 	cycloneive_nmux21
-# 	cycloneive_b5mux21
-# 	cycloneive_pll_reg
-# 	cycloneive_pll
-# 	cycloneive_lcell_comb
-# 	cycloneive_ff
-# 	cycloneive_ram_block
-# 	cycloneive_mac_mult
-# 	cycloneive_mac_out
-# 	cycloneive_io_ibuf
-# 	cycloneive_io_obuf
-# 	cycloneive_ddio_out
-# 	cycloneive_ddio_oe
-# 	cycloneive_pseudo_diff_out
-# 	cycloneive_io_pad
-# 	cycloneive_clkctrl
-# 	cycloneive_rublock
-# 	cycloneive_apfcontroller
-# 	cycloneive_termination
-# 	cycloneive_jtag
-# 	cycloneive_crcblock
-# 	cycloneive_oscillator
-# End time: 14:25:55 on Aug 05,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
+# Reading D:/Altera/modelsim_ase/tcl/vsim/pref.tcl 
+# do Lc3b_run_msim_rtl_verilog.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
 # vlib rtl_work
 # vmap work rtl_work
-# Model Technology ModelSim PE vmap 10.4a Lib Mapping Utility 2015.03 Apr  7 2015
-# vmap -modelsim_quiet work rtl_work 
+# Copying D:\Altera\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
+# ** Warning: Copied D:\Altera\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/reyno/Documents/Summer\ 2018\ Computer\ Architecture/SummerComputerArchitecture {C:/Users/reyno/Documents/Summer 2018 Computer Architecture/SummerComputerArchitecture/sext.v}
-# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
-# Start time: 14:25:56 on Aug 05,2018
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/reyno/Documents/Summer 2018 Computer Architecture/SummerComputerArchitecture" C:/Users/reyno/Documents/Summer 2018 Computer Architecture/SummerComputerArchitecture/sext.v 
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/lshf1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module lshf1
+# 
+# Top level modules:
+# 	lshf1
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/memory.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module memory
+# -- Compiling module memory_test
+# 
+# Top level modules:
+# 	memory_test
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/control.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module control
+# 
+# Top level modules:
+# 	control
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module LC_3b
+# 
+# Top level modules:
+# 	LC_3b
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/zext.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module zext
+# -- Compiling module zext_test
+# 
+# Top level modules:
+# 	zext_test
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/sext.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module sext
 # -- Compiling module sext_test
 # 
 # Top level modules:
 # 	sext_test
-# End time: 14:25:56 on Aug 05,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/regfile.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module regfile
+# -- Compiling module regfile_test
 # 
-vsim work.sext_test
-# //  ModelSim PE Student Edition 10.4a Apr  7 2015 
-# //
-# //  Copyright 1991-2015 Mentor Graphics Corporation
-# //  All Rights Reserved.
-# //
-# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
-# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
-# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
-# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
-# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
-# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
-# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
-# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
-# //
-# // NOT FOR CORPORATE OR PRODUCTION USE.
-# // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
-# // FOR HIGHER EDUCATION PURPOSES ONLY
-# //
-# vsim -gui "+altera" -l msim_transcript -do "Lc3b_run_msim_rtl_verilog.do" 
-# Start time: 14:25:58 on Aug 05,2018
-# Loading work.sext_test
+# Top level modules:
+# 	regfile_test
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/alu.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module alu
+# -- Compiling module alu_test
+# 
+# Top level modules:
+# 	alu_test
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/shift.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module shift
+# -- Compiling module shift_test
+# 
+# Top level modules:
+# 	shift_test
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/gate.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module gate
+# -- Compiling module gate_test
+# 
+# Top level modules:
+# 	gate_test
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/mux2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux2
+# 
+# Top level modules:
+# 	mux2
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/mux3.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux3
+# 
+# Top level modules:
+# 	mux3
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/pcinc.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pcinc
+# 
+# Top level modules:
+# 	pcinc
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/mux4.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux4
+# 
+# Top level modules:
+# 	mux4
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/pc.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pc
+# 
+# Top level modules:
+# 	pc
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/adder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/ir.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ir
+# 
+# Top level modules:
+# 	ir
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/tb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb 
+# Loading work.tb
+# Loading work.LC_3b
+# Loading work.gate
+# Loading work.pcinc
+# Loading work.mux2
+# Loading work.mux3
+# Loading work.mux4
+# Loading work.pc
+# Loading work.adder
+# Loading work.lshf1
+# Loading work.ir
 # Loading work.sext
-add wave -position insertpoint  \
-sim:/sext_test/WIDTH \
-sim:/sext_test/internal_clock \
-sim:/sext_test/in_test \
-sim:/sext_test/out_test
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# Loading work.zext
+# Loading work.regfile
+# Loading work.alu
+# Loading work.shift
+# Loading work.control
+# Loading work.memory
+# ** Warning: (vsim-3017) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Too few port connections. Expected 10, found 1.
 # 
-#           File in use by: reyno  Hostname: REYNOLDSP  ProcessID: 6132
+#         Region: /tb/dut
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'LED'.
 # 
-#           Attempting to use alternate WLF file "./wlftkkx2ws".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'KEY'.
 # 
-#           Using alternate file: ./wlftkkx2ws
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'SW'.
 # 
-run 100ns
-run 100ns
-# End time: 14:26:53 on Aug 05,2018, Elapsed time: 0:00:55
-# Errors: 0, Warnings: 2
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO_2'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO_2_IN'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO0_IN'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO1_IN'.
+# 
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(67): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'in'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/gate.v(16).
+# 
+#         Region: /tb/dut/gatePC0
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(85): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'in'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/gate.v(16).
+# 
+#         Region: /tb/dut/gateMDR0
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(90): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'in'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/pcinc.v(13).
+# 
+#         Region: /tb/dut/pcinc2
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(112): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'in1'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux2.v(16).
+# 
+#         Region: /tb/dut/addr1mux
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(125): [PCDPC] - Port size (16 or 16) does not match connection size (11) for port 'in0'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux4.v(17).
+# 
+#         Region: /tb/dut/addr2mux
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(125): [PCDPC] - Port size (16 or 16) does not match connection size (9) for port 'in1'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux4.v(18).
+# 
+#         Region: /tb/dut/addr2mux
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(125): [PCDPC] - Port size (16 or 16) does not match connection size (6) for port 'in2'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux4.v(19).
+# 
+#         Region: /tb/dut/addr2mux
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(132): [PCDPC] - Port size (16 or 16) does not match connection size (5) for port 'in1'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux2.v(16).
+# 
+#         Region: /tb/dut/sr2mux
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(139): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/pc.v(17).
+# 
+#         Region: /tb/dut/pc0
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(170): [PCDPC] - Port size (16 or 16) does not match connection size (11) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/sext.v(14).
+# 
+#         Region: /tb/dut/sext11
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(175): [PCDPC] - Port size (16 or 16) does not match connection size (9) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/sext.v(14).
+# 
+#         Region: /tb/dut/sext9
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(180): [PCDPC] - Port size (16 or 16) does not match connection size (6) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/sext.v(14).
+# 
+#         Region: /tb/dut/sext6
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(185): [PCDPC] - Port size (16 or 16) does not match connection size (5) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/sext.v(14).
+# 
+#         Region: /tb/dut/sext5
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(256): [PCDPC] - Port size (1 or 1) does not match connection size (16) for port 'bus'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/memory.v(20).
+# 
+#         Region: /tb/dut/memory0
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1000 ns
+add wave -position end  sim:/tb/dut/ir0/out
+add wave -position end  sim:/tb/dut/pc0/in
+add wave -position end  sim:/tb/dut/pc0/clock_50
+add wave -position end  sim:/tb/dut/pc0/load
+add wave -position end  sim:/tb/dut/pc0/out
+add wave -position end  sim:/tb/dut/control0/state
+restart
+# ** Warning: (vsim-3017) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Too few port connections. Expected 10, found 1.
+# 
+#         Region: /tb/dut
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'LED'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'KEY'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'SW'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO_2'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO_2_IN'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO0_IN'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO1_IN'.
+# 
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(67): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'in'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/gate.v(16).
+# 
+#         Region: /tb/dut/gatePC0
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(85): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'in'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/gate.v(16).
+# 
+#         Region: /tb/dut/gateMDR0
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(90): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'in'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/pcinc.v(13).
+# 
+#         Region: /tb/dut/pcinc2
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(112): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'in1'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux2.v(16).
+# 
+#         Region: /tb/dut/addr1mux
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(125): [PCDPC] - Port size (16 or 16) does not match connection size (11) for port 'in0'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux4.v(17).
+# 
+#         Region: /tb/dut/addr2mux
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(125): [PCDPC] - Port size (16 or 16) does not match connection size (9) for port 'in1'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux4.v(18).
+# 
+#         Region: /tb/dut/addr2mux
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(125): [PCDPC] - Port size (16 or 16) does not match connection size (6) for port 'in2'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux4.v(19).
+# 
+#         Region: /tb/dut/addr2mux
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(132): [PCDPC] - Port size (16 or 16) does not match connection size (5) for port 'in1'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux2.v(16).
+# 
+#         Region: /tb/dut/sr2mux
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(139): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/pc.v(17).
+# 
+#         Region: /tb/dut/pc0
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(170): [PCDPC] - Port size (16 or 16) does not match connection size (11) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/sext.v(14).
+# 
+#         Region: /tb/dut/sext11
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(175): [PCDPC] - Port size (16 or 16) does not match connection size (9) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/sext.v(14).
+# 
+#         Region: /tb/dut/sext9
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(180): [PCDPC] - Port size (16 or 16) does not match connection size (6) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/sext.v(14).
+# 
+#         Region: /tb/dut/sext6
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(185): [PCDPC] - Port size (16 or 16) does not match connection size (5) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/sext.v(14).
+# 
+#         Region: /tb/dut/sext5
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(256): [PCDPC] - Port size (1 or 1) does not match connection size (16) for port 'bus'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/memory.v(20).
+# 
+#         Region: /tb/dut/memory0
+run 10ns
+add wave -position end  sim:/tb/dut/control0/r
+add wave -position end  sim:/tb/dut/control0/addr1mux
+add wave -position end  sim:/tb/dut/control0/sr2mux
+add wave -position end  sim:/tb/dut/control0/marmux
+add wave -position end  sim:/tb/dut/control0/ldmar
+add wave -position end  sim:/tb/dut/control0/ldmdr
+add wave -position end  sim:/tb/dut/control0/ldpc
+add wave -position end  sim:/tb/dut/control0/ldir
+add wave -position end  sim:/tb/dut/control0/ldcc
+add wave -position end  sim:/tb/dut/control0/ldreg
+add wave -position end  sim:/tb/dut/control0/gatepc
+add wave -position end  sim:/tb/dut/control0/gatemdr
+add wave -position end  sim:/tb/dut/control0/gatealu
+add wave -position end  sim:/tb/dut/control0/gateshf
+add wave -position end  sim:/tb/dut/control0/gatemarmux
+add wave -position end  sim:/tb/dut/control0/rw
+add wave -position end  sim:/tb/dut/control0/datasize
+add wave -position end  sim:/tb/dut/control0/lshf
+add wave -position end  sim:/tb/dut/control0/pcmux
+add wave -position end  sim:/tb/dut/control0/addr2mux
+add wave -position end  sim:/tb/dut/control0/aluk
+add wave -position end  sim:/tb/dut/control0/sr1
+add wave -position end  sim:/tb/dut/control0/sr2
+add wave -position end  sim:/tb/dut/control0/dr
+add wave -position end  sim:/tb/dut/control0/n
+add wave -position end  sim:/tb/dut/control0/z
+add wave -position end  sim:/tb/dut/control0/p
+add wave -position end  sim:/tb/dut/control0/ben
+restart
+# ** Warning: (vsim-3017) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Too few port connections. Expected 10, found 1.
+# 
+#         Region: /tb/dut
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'LED'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'KEY'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'SW'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO_2'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO_2_IN'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO0_IN'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO1_IN'.
+# 
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(67): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'in'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/gate.v(16).
+# 
+#         Region: /tb/dut/gatePC0
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(85): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'in'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/gate.v(16).
+# 
+#         Region: /tb/dut/gateMDR0
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(90): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'in'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/pcinc.v(13).
+# 
+#         Region: /tb/dut/pcinc2
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(112): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'in1'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux2.v(16).
+# 
+#         Region: /tb/dut/addr1mux
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(125): [PCDPC] - Port size (16 or 16) does not match connection size (11) for port 'in0'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux4.v(17).
+# 
+#         Region: /tb/dut/addr2mux
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(125): [PCDPC] - Port size (16 or 16) does not match connection size (9) for port 'in1'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux4.v(18).
+# 
+#         Region: /tb/dut/addr2mux
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(125): [PCDPC] - Port size (16 or 16) does not match connection size (6) for port 'in2'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux4.v(19).
+# 
+#         Region: /tb/dut/addr2mux
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(132): [PCDPC] - Port size (16 or 16) does not match connection size (5) for port 'in1'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux2.v(16).
+# 
+#         Region: /tb/dut/sr2mux
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(139): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/pc.v(17).
+# 
+#         Region: /tb/dut/pc0
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(170): [PCDPC] - Port size (16 or 16) does not match connection size (11) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/sext.v(14).
+# 
+#         Region: /tb/dut/sext11
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(175): [PCDPC] - Port size (16 or 16) does not match connection size (9) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/sext.v(14).
+# 
+#         Region: /tb/dut/sext9
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(180): [PCDPC] - Port size (16 or 16) does not match connection size (6) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/sext.v(14).
+# 
+#         Region: /tb/dut/sext6
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(185): [PCDPC] - Port size (16 or 16) does not match connection size (5) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/sext.v(14).
+# 
+#         Region: /tb/dut/sext5
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(256): [PCDPC] - Port size (1 or 1) does not match connection size (16) for port 'bus'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/memory.v(20).
+# 
+#         Region: /tb/dut/memory0
+run 1ns
+add wave -position 14  sim:/tb/dut/memory0/mar
+add wave -position 15  sim:/tb/dut/memory0/mdr
+restart
+# ** Warning: (vsim-3017) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Too few port connections. Expected 10, found 1.
+# 
+#         Region: /tb/dut
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'LED'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'KEY'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'SW'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO_2'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO_2_IN'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO0_IN'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO1_IN'.
+# 
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(67): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'in'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/gate.v(16).
+# 
+#         Region: /tb/dut/gatePC0
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(85): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'in'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/gate.v(16).
+# 
+#         Region: /tb/dut/gateMDR0
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(90): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'in'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/pcinc.v(13).
+# 
+#         Region: /tb/dut/pcinc2
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(112): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'in1'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux2.v(16).
+# 
+#         Region: /tb/dut/addr1mux
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(125): [PCDPC] - Port size (16 or 16) does not match connection size (11) for port 'in0'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux4.v(17).
+# 
+#         Region: /tb/dut/addr2mux
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(125): [PCDPC] - Port size (16 or 16) does not match connection size (9) for port 'in1'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux4.v(18).
+# 
+#         Region: /tb/dut/addr2mux
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(125): [PCDPC] - Port size (16 or 16) does not match connection size (6) for port 'in2'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux4.v(19).
+# 
+#         Region: /tb/dut/addr2mux
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(132): [PCDPC] - Port size (16 or 16) does not match connection size (5) for port 'in1'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux2.v(16).
+# 
+#         Region: /tb/dut/sr2mux
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(139): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/pc.v(17).
+# 
+#         Region: /tb/dut/pc0
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(170): [PCDPC] - Port size (16 or 16) does not match connection size (11) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/sext.v(14).
+# 
+#         Region: /tb/dut/sext11
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(175): [PCDPC] - Port size (16 or 16) does not match connection size (9) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/sext.v(14).
+# 
+#         Region: /tb/dut/sext9
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(180): [PCDPC] - Port size (16 or 16) does not match connection size (6) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/sext.v(14).
+# 
+#         Region: /tb/dut/sext6
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(185): [PCDPC] - Port size (16 or 16) does not match connection size (5) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/sext.v(14).
+# 
+#         Region: /tb/dut/sext5
+# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(256): [PCDPC] - Port size (1 or 1) does not match connection size (16) for port 'bus'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/memory.v(20).
+# 
+#         Region: /tb/dut/memory0
+run 1ns

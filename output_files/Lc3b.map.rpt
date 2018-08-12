@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lc3b
-Sun Aug 05 14:25:31 2018
+Sat Aug 11 17:30:29 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -13,10 +13,36 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: Top-level Entity: |sext
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  8. Analysis & Synthesis RAM Summary
+  9. Registers Removed During Synthesis
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Inverted Register Statistics
+ 13. Registers Packed Into Inferred Megafunctions
+ 14. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 15. Source assignments for control:control0|altsyncram:WideOr0_rtl_0|altsyncram_otu:auto_generated
+ 16. Parameter Settings for User Entity Instance: sext:sext11
+ 17. Parameter Settings for User Entity Instance: sext:sext9
+ 18. Parameter Settings for User Entity Instance: sext:sext6
+ 19. Parameter Settings for User Entity Instance: sext:sext5
+ 20. Parameter Settings for Inferred Entity Instance: control:control0|altsyncram:WideOr0_rtl_0
+ 21. altsyncram Parameter Settings by Entity Instance
+ 22. Port Connectivity Checks: "memory:memory0"
+ 23. Port Connectivity Checks: "control:control0"
+ 24. Port Connectivity Checks: "sext:sext5"
+ 25. Port Connectivity Checks: "sext:sext6"
+ 26. Port Connectivity Checks: "sext:sext9"
+ 27. Port Connectivity Checks: "sext:sext11"
+ 28. Port Connectivity Checks: "lshf1:zext_lshf1"
+ 29. Port Connectivity Checks: "pc:pc0"
+ 30. Port Connectivity Checks: "mux2:sr2mux"
+ 31. Port Connectivity Checks: "mux4:addr2mux"
+ 32. Port Connectivity Checks: "mux2:addr1mux"
+ 33. Port Connectivity Checks: "pcinc:pcinc2"
+ 34. Port Connectivity Checks: "gate:gateMDR0"
+ 35. Port Connectivity Checks: "gate:gatePC0"
+ 36. Elapsed Time Per Partition
+ 37. Analysis & Synthesis Messages
 
 
 
@@ -42,18 +68,18 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Aug 05 14:25:31 2018           ;
+; Analysis & Synthesis Status        ; Successful - Sat Aug 11 17:30:29 2018           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Lc3b                                            ;
-; Top-level Entity Name              ; sext                                            ;
+; Top-level Entity Name              ; LC_3b                                           ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 0                                               ;
-;     Total combinational functions  ; 0                                               ;
-;     Dedicated logic registers      ; 0                                               ;
-; Total registers                    ; 0                                               ;
-; Total pins                         ; 23                                              ;
+; Total logic elements               ; 653                                             ;
+;     Total combinational functions  ; 525                                             ;
+;     Dedicated logic registers      ; 168                                             ;
+; Total registers                    ; 168                                             ;
+; Total pins                         ; 103                                             ;
 ; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0                                               ;
+; Total memory bits                  ; 896                                             ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
 ; Total PLLs                         ; 0                                               ;
 +------------------------------------+-------------------------------------------------+
@@ -65,7 +91,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CE22F17C6       ;                    ;
-; Top-level entity name                                                      ; sext               ; Lc3b               ;
+; Top-level entity name                                                      ; LC_3b              ; Lc3b               ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -152,57 +178,140 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 8      ;
+; Number detected on machine ; 4      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                               ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                 ; Library ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------+---------+
-; sext.v                           ; yes             ; User Verilog HDL File  ; C:/Users/reyno/Documents/Summer 2018 Computer Architecture/SummerComputerArchitecture/sext.v ;         ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                        ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                    ; Library ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------+---------+
+; lshf1.v                          ; yes             ; User Verilog HDL File        ; C:/Users/namel/Documents/GitHub/Lc3b/lshf1.v                    ;         ;
+; memory.v                         ; yes             ; User Verilog HDL File        ; C:/Users/namel/Documents/GitHub/Lc3b/memory.v                   ;         ;
+; control.v                        ; yes             ; User Verilog HDL File        ; C:/Users/namel/Documents/GitHub/Lc3b/control.v                  ;         ;
+; ../LC_3b.v                       ; yes             ; User Verilog HDL File        ; C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v                    ;         ;
+; zext.v                           ; yes             ; User Verilog HDL File        ; C:/Users/namel/Documents/GitHub/Lc3b/zext.v                     ;         ;
+; sext.v                           ; yes             ; User Verilog HDL File        ; C:/Users/namel/Documents/GitHub/Lc3b/sext.v                     ;         ;
+; regfile.v                        ; yes             ; User Verilog HDL File        ; C:/Users/namel/Documents/GitHub/Lc3b/regfile.v                  ;         ;
+; alu.v                            ; yes             ; User Verilog HDL File        ; C:/Users/namel/Documents/GitHub/Lc3b/alu.v                      ;         ;
+; shift.v                          ; yes             ; User Verilog HDL File        ; C:/Users/namel/Documents/GitHub/Lc3b/shift.v                    ;         ;
+; gate.v                           ; yes             ; User Verilog HDL File        ; C:/Users/namel/Documents/GitHub/Lc3b/gate.v                     ;         ;
+; mux2.v                           ; yes             ; User Verilog HDL File        ; C:/Users/namel/Documents/GitHub/Lc3b/mux2.v                     ;         ;
+; mux3.v                           ; yes             ; User Verilog HDL File        ; C:/Users/namel/Documents/GitHub/Lc3b/mux3.v                     ;         ;
+; pcinc.v                          ; yes             ; User Verilog HDL File        ; C:/Users/namel/Documents/GitHub/Lc3b/pcinc.v                    ;         ;
+; mux4.v                           ; yes             ; User Verilog HDL File        ; C:/Users/namel/Documents/GitHub/Lc3b/mux4.v                     ;         ;
+; pc.v                             ; yes             ; User Verilog HDL File        ; C:/Users/namel/Documents/GitHub/Lc3b/pc.v                       ;         ;
+; adder.v                          ; yes             ; User Verilog HDL File        ; C:/Users/namel/Documents/GitHub/Lc3b/adder.v                    ;         ;
+; ir.v                             ; yes             ; User Verilog HDL File        ; C:/Users/namel/Documents/GitHub/Lc3b/ir.v                       ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                 ; d:/altera/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                 ; d:/altera/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                 ; d:/altera/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                 ; d:/altera/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
+; aglobal130.inc                   ; yes             ; Megafunction                 ; d:/altera/quartus/libraries/megafunctions/aglobal130.inc        ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                 ; d:/altera/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
+; altrom.inc                       ; yes             ; Megafunction                 ; d:/altera/quartus/libraries/megafunctions/altrom.inc            ;         ;
+; altram.inc                       ; yes             ; Megafunction                 ; d:/altera/quartus/libraries/megafunctions/altram.inc            ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                 ; d:/altera/quartus/libraries/megafunctions/altdpram.inc          ;         ;
+; db/altsyncram_otu.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/namel/Documents/GitHub/Lc3b/db/altsyncram_otu.tdf      ;         ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-;                                             ;             ;
-; Total combinational functions               ; 0           ;
-; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 0           ;
-;     -- 3 input functions                    ; 0           ;
-;     -- <=2 input functions                  ; 0           ;
-;                                             ;             ;
-; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 0           ;
-;     -- arithmetic mode                      ; 0           ;
-;                                             ;             ;
-; Total registers                             ; 0           ;
-;     -- Dedicated logic registers            ; 0           ;
-;     -- I/O registers                        ; 0           ;
-;                                             ;             ;
-; I/O pins                                    ; 23          ;
-; Embedded Multiplier 9-bit elements          ; 0           ;
-; Maximum fan-out node                        ; in[6]~input ;
-; Maximum fan-out                             ; 10          ;
-; Total fan-out                               ; 39          ;
-; Average fan-out                             ; 0.85        ;
-+---------------------------------------------+-------------+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimated Total logic elements              ; 653            ;
+;                                             ;                ;
+; Total combinational functions               ; 525            ;
+; Logic element usage by number of LUT inputs ;                ;
+;     -- 4 input functions                    ; 407            ;
+;     -- 3 input functions                    ; 93             ;
+;     -- <=2 input functions                  ; 25             ;
+;                                             ;                ;
+; Logic elements by mode                      ;                ;
+;     -- normal mode                          ; 510            ;
+;     -- arithmetic mode                      ; 15             ;
+;                                             ;                ;
+; Total registers                             ; 168            ;
+;     -- Dedicated logic registers            ; 168            ;
+;     -- I/O registers                        ; 0              ;
+;                                             ;                ;
+; I/O pins                                    ; 103            ;
+; Total memory bits                           ; 896            ;
+; Embedded Multiplier 9-bit elements          ; 0              ;
+; Maximum fan-out node                        ; CLOCK_50~input ;
+; Maximum fan-out                             ; 182            ;
+; Total fan-out                               ; 2750           ;
+; Average fan-out                             ; 2.77           ;
++---------------------------------------------+----------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |sext                      ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 23   ; 0            ; |sext               ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                  ;
++------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node               ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                            ; Library Name ;
++------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------+--------------+
+; |LC_3b                                   ; 525 (0)           ; 168 (0)      ; 896         ; 0            ; 0       ; 0         ; 103  ; 0            ; |LC_3b                                                                         ; work         ;
+;    |adder:adder0|                        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LC_3b|adder:adder0                                                            ; work         ;
+;    |alu:alu0|                            ; 49 (49)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LC_3b|alu:alu0                                                                ; work         ;
+;    |control:control0|                    ; 57 (57)           ; 18 (18)      ; 896         ; 0            ; 0       ; 0         ; 0    ; 0            ; |LC_3b|control:control0                                                        ; work         ;
+;       |altsyncram:WideOr0_rtl_0|         ; 0 (0)             ; 0 (0)        ; 896         ; 0            ; 0       ; 0         ; 0    ; 0            ; |LC_3b|control:control0|altsyncram:WideOr0_rtl_0                               ; work         ;
+;          |altsyncram_otu:auto_generated| ; 0 (0)             ; 0 (0)        ; 896         ; 0            ; 0       ; 0         ; 0    ; 0            ; |LC_3b|control:control0|altsyncram:WideOr0_rtl_0|altsyncram_otu:auto_generated ; work         ;
+;    |gate:gateALU0|                       ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LC_3b|gate:gateALU0                                                           ; work         ;
+;    |gate:gateMDR0|                       ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LC_3b|gate:gateMDR0                                                           ; work         ;
+;    |gate:gatePC0|                        ; 47 (47)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LC_3b|gate:gatePC0                                                            ; work         ;
+;    |gate:gateSHF0|                       ; 34 (34)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LC_3b|gate:gateSHF0                                                           ; work         ;
+;    |ir:ir0|                              ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LC_3b|ir:ir0                                                                  ; work         ;
+;    |lshf1:addr2_lshf1|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LC_3b|lshf1:addr2_lshf1                                                       ; work         ;
+;    |memory:memory0|                      ; 5 (5)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LC_3b|memory:memory0                                                          ; work         ;
+;    |mux2:addr1mux|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LC_3b|mux2:addr1mux                                                           ; work         ;
+;    |mux2:sr2mux|                         ; 23 (23)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LC_3b|mux2:sr2mux                                                             ; work         ;
+;    |pc:pc0|                              ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LC_3b|pc:pc0                                                                  ; work         ;
+;    |regfile:regfile0|                    ; 152 (152)         ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LC_3b|regfile:regfile0                                                        ; work         ;
+;    |shift:shf|                           ; 137 (137)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LC_3b|shift:shf                                                               ; work         ;
++------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                          ;
++------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+---------------------+
+; Name                                                                               ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                 ;
++------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+---------------------+
+; control:control0|altsyncram:WideOr0_rtl_0|altsyncram_otu:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 64           ; 16           ; --           ; --           ; 1024 ; Lc3b.LC_3b0.rtl.mif ;
++------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+---------------------+
+
+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++---------------------------------------+-----------------------------------------+
+; Register name                         ; Reason for Removal                      ;
++---------------------------------------+-----------------------------------------+
+; control:control0|p                    ; Stuck at GND due to stuck port data_in  ;
+; control:control0|z                    ; Stuck at GND due to stuck port data_in  ;
+; control:control0|n                    ; Stuck at GND due to stuck port data_in  ;
+; control:control0|ben                  ; Stuck at GND due to stuck port data_in  ;
+; memory:memory0|saving                 ; Stuck at VCC due to stuck port data_in  ;
+; control:control0|marmux               ; Merged with control:control0|gatemarmux ;
+; memory:memory0|loading                ; Stuck at VCC due to stuck port data_in  ;
+; control:control0|rw                   ; Lost fanout                             ;
+; Total Number of Removed Registers = 8 ;                                         ;
++---------------------------------------+-----------------------------------------+
+
+
++--------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                ;
++-----------------------+---------------------------+----------------------------------------+
+; Register name         ; Reason for Removal        ; Registers Removed due to This Register ;
++-----------------------+---------------------------+----------------------------------------+
+; control:control0|p    ; Stuck at GND              ; control:control0|ben                   ;
+;                       ; due to stuck port data_in ;                                        ;
+; memory:memory0|saving ; Stuck at VCC              ; control:control0|rw                    ;
+;                       ; due to stuck port data_in ;                                        ;
++-----------------------+---------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -210,24 +319,320 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Total registers                              ; 168   ;
+; Number of registers using Synchronous Clear  ; 1     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 144   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |sext ;
-+----------------+-------+---------------------------------------------+
-; Parameter Name ; Value ; Type                                        ;
-+----------------+-------+---------------------------------------------+
-; WIDTH          ; 7     ; Signed Integer                              ;
-+----------------+-------+---------------------------------------------+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; control:control0|state[1]              ; 30      ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
+
+
++------------------------------------------------------------------------+
+; Registers Packed Into Inferred Megafunctions                           ;
++--------------------------------+--------------------------------+------+
+; Register Name                  ; Megafunction                   ; Type ;
++--------------------------------+--------------------------------+------+
+; control:control0|gatemdr       ; control:control0|WideOr0_rtl_0 ; ROM  ;
+; control:control0|gatealu       ; control:control0|WideOr0_rtl_0 ; ROM  ;
+; control:control0|gatemarmux    ; control:control0|WideOr0_rtl_0 ; ROM  ;
+; control:control0|state[4,5]    ; control:control0|WideOr0_rtl_0 ; ROM  ;
+; control:control0|gatepc        ; control:control0|WideOr0_rtl_0 ; ROM  ;
+; control:control0|ldreg         ; control:control0|WideOr0_rtl_0 ; ROM  ;
+; control:control0|ldpc          ; control:control0|WideOr0_rtl_0 ; ROM  ;
+; control:control0|ldmdr         ; control:control0|WideOr0_rtl_0 ; ROM  ;
+; control:control0|ldmar         ; control:control0|WideOr0_rtl_0 ; ROM  ;
+; control:control0|aluk[0,1]     ; control:control0|WideOr0_rtl_0 ; ROM  ;
+; control:control0|addr2mux[0,1] ; control:control0|WideOr0_rtl_0 ; ROM  ;
+; control:control0|addr1mux      ; control:control0|WideOr0_rtl_0 ; ROM  ;
+; control:control0|pcmux[0]      ; control:control0|WideOr0_rtl_0 ; ROM  ;
++--------------------------------+--------------------------------+------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |LC_3b|memory:memory0|counter[2] ;
+; 64:1               ; 2 bits    ; 84 LEs        ; 44 LEs               ; 40 LEs                 ; Yes        ; |LC_3b|control:control0|state[3] ;
+; 64:1               ; 2 bits    ; 84 LEs        ; 8 LEs                ; 76 LEs                 ; Yes        ; |LC_3b|control:control0|dr[1]    ;
+; 4:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; No         ; |LC_3b|alu:alu0|Mux2             ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |LC_3b|shift:shf|out[9]          ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |LC_3b|shift:shf|out[6]          ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; No         ; |LC_3b|shift:shf|out[13]         ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |LC_3b|shift:shf|out[3]          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Source assignments for control:control0|altsyncram:WideOr0_rtl_0|altsyncram_otu:auto_generated ;
++---------------------------------+--------------------+------+----------------------------------+
+; Assignment                      ; Value              ; From ; To                               ;
++---------------------------------+--------------------+------+----------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                ;
++---------------------------------+--------------------+------+----------------------------------+
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sext:sext11 ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; WIDTH          ; 11    ; Signed Integer                  ;
++----------------+-------+---------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sext:sext9 ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; WIDTH          ; 9     ; Signed Integer                 ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sext:sext6 ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; WIDTH          ; 6     ; Signed Integer                 ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sext:sext5 ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; WIDTH          ; 5     ; Signed Integer                 ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: control:control0|altsyncram:WideOr0_rtl_0 ;
++------------------------------------+----------------------+--------------------------------+
+; Parameter Name                     ; Value                ; Type                           ;
++------------------------------------+----------------------+--------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                        ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                     ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                   ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                   ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                 ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                        ;
+; OPERATION_MODE                     ; ROM                  ; Untyped                        ;
+; WIDTH_A                            ; 16                   ; Untyped                        ;
+; WIDTHAD_A                          ; 6                    ; Untyped                        ;
+; NUMWORDS_A                         ; 64                   ; Untyped                        ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                        ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                        ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                        ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                        ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                        ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                        ;
+; WIDTH_B                            ; 1                    ; Untyped                        ;
+; WIDTHAD_B                          ; 1                    ; Untyped                        ;
+; NUMWORDS_B                         ; 1                    ; Untyped                        ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                        ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                        ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                        ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                        ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                        ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                        ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                        ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                        ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                        ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                        ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                        ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                        ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Untyped                        ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                        ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                        ;
+; BYTE_SIZE                          ; 8                    ; Untyped                        ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                        ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                        ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                        ;
+; INIT_FILE                          ; Lc3b.LC_3b0.rtl.mif  ; Untyped                        ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                        ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                        ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL               ; Untyped                        ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                        ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL               ; Untyped                        ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                        ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                        ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                        ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                        ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                        ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                        ;
+; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                        ;
+; CBXI_PARAMETER                     ; altsyncram_otu       ; Untyped                        ;
++------------------------------------+----------------------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                      ;
++-------------------------------------------+-------------------------------------------+
+; Name                                      ; Value                                     ;
++-------------------------------------------+-------------------------------------------+
+; Number of entity instances                ; 1                                         ;
+; Entity Instance                           ; control:control0|altsyncram:WideOr0_rtl_0 ;
+;     -- OPERATION_MODE                     ; ROM                                       ;
+;     -- WIDTH_A                            ; 16                                        ;
+;     -- NUMWORDS_A                         ; 64                                        ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                              ;
+;     -- WIDTH_B                            ; 1                                         ;
+;     -- NUMWORDS_B                         ; 1                                         ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                    ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                              ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                      ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                 ;
++-------------------------------------------+-------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "memory:memory0"                                                                                                                                                                   ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                                                            ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; bus  ; Input ; Warning  ; Input port expression (16 bits) is wider than the input port (1 bits) it drives.  The 15 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "control:control0"                                                                   ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; ldcc ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sext:sext5"                                                                                                              ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                  ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; out  ; Output ; Warning  ; Output or bidir port (16 bits) is wider than the port expression (5 bits) it drives; bit(s) "out[15..5]" have no fanouts ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sext:sext6"                                                                                                              ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                  ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; out  ; Output ; Warning  ; Output or bidir port (16 bits) is wider than the port expression (6 bits) it drives; bit(s) "out[15..6]" have no fanouts ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sext:sext9"                                                                                                              ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                  ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; out  ; Output ; Warning  ; Output or bidir port (16 bits) is wider than the port expression (9 bits) it drives; bit(s) "out[15..9]" have no fanouts ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sext:sext11"                                                                                                               ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                    ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------+
+; out  ; Output ; Warning  ; Output or bidir port (16 bits) is wider than the port expression (11 bits) it drives; bit(s) "out[15..11]" have no fanouts ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "lshf1:zext_lshf1"                                                                   ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; out  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pc:pc0"                                                                                                                  ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                  ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; out  ; Output ; Warning  ; Output or bidir port (16 bits) is wider than the port expression (1 bits) it drives; bit(s) "out[15..1]" have no fanouts ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux2:sr2mux"                                                                                                                                 ;
++------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                       ;
++------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; in1  ; Input ; Warning  ; Input port expression (5 bits) is smaller than the input port (16 bits) it drives.  Extra input bit(s) "in1[15..5]" will be connected to GND. ;
++------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux4:addr2mux"                                                                                                                                 ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                         ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+; in0  ; Input ; Warning  ; Input port expression (11 bits) is smaller than the input port (16 bits) it drives.  Extra input bit(s) "in0[15..11]" will be connected to GND. ;
+; in1  ; Input ; Warning  ; Input port expression (9 bits) is smaller than the input port (16 bits) it drives.  Extra input bit(s) "in1[15..9]" will be connected to GND.   ;
+; in2  ; Input ; Warning  ; Input port expression (6 bits) is smaller than the input port (16 bits) it drives.  Extra input bit(s) "in2[15..6]" will be connected to GND.   ;
+; in3  ; Input ; Info     ; Stuck at GND                                                                                                                                    ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux2:addr1mux"                                                                                                                               ;
++------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                       ;
++------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; in1  ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (16 bits) it drives.  Extra input bit(s) "in1[15..1]" will be connected to GND. ;
++------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pcinc:pcinc2"                                                                                                                               ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; in   ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (16 bits) it drives.  Extra input bit(s) "in[15..1]" will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "gate:gateMDR0"                                                                                                                              ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; in   ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (16 bits) it drives.  Extra input bit(s) "in[15..1]" will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "gate:gatePC0"                                                                                                                               ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; in   ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (16 bits) it drives.  Extra input bit(s) "in[15..1]" will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------+
@@ -235,7 +640,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -245,17 +650,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun Aug 05 14:25:28 2018
+    Info: Processing started: Sat Aug 11 17:30:26 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lc3b -c Lc3b
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Warning (10463): Verilog HDL Declaration warning at control.v(61): "byte" is SystemVerilog-2005 keyword
+Info (12021): Found 1 design units, including 1 entities, in source file lshf1.v
+    Info (12023): Found entity 1: lshf1
+Info (12021): Found 2 design units, including 2 entities, in source file memory.v
+    Info (12023): Found entity 1: memory
+    Info (12023): Found entity 2: memory_test
 Info (12021): Found 1 design units, including 1 entities, in source file control.v
     Info (12023): Found entity 1: control
-Info (12021): Found 2 design units, including 2 entities, in source file mux16.v
-    Info (12023): Found entity 1: mux16
-    Info (12023): Found entity 2: mux16_test
-Info (12021): Found 1 design units, including 1 entities, in source file fsm_using_always.v
-    Info (12023): Found entity 1: fsm_using_always
 Info (12021): Found 1 design units, including 1 entities, in source file lc_3b.v
     Info (12023): Found entity 1: LC_3b
 Info (12021): Found 2 design units, including 2 entities, in source file zext.v
@@ -276,31 +680,197 @@ Info (12021): Found 2 design units, including 2 entities, in source file shift.v
 Info (12021): Found 2 design units, including 2 entities, in source file gate.v
     Info (12023): Found entity 1: gate
     Info (12023): Found entity 2: gate_test
-Info (12021): Found 2 design units, including 2 entities, in source file gateshf.v
-    Info (12023): Found entity 1: gateshf
-    Info (12023): Found entity 2: gateshf_test
-Info (12021): Found 2 design units, including 2 entities, in source file gatealu.v
-    Info (12023): Found entity 1: gatealu
-    Info (12023): Found entity 2: gatealu_test
-Info (12021): Found 2 design units, including 2 entities, in source file gatemarmux.v
-    Info (12023): Found entity 1: gatemarmux
-    Info (12023): Found entity 2: gatemarmux_test
-Info (12021): Found 2 design units, including 2 entities, in source file gatepc.v
-    Info (12023): Found entity 1: gatepc
-    Info (12023): Found entity 2: gatepc_test
-Info (12021): Found 2 design units, including 2 entities, in source file gatemdr.v
-    Info (12023): Found entity 1: gatemdr
-    Info (12023): Found entity 2: gatemdr_test
-Info (12127): Elaborating entity "sext" for the top level hierarchy
+Info (12021): Found 1 design units, including 1 entities, in source file mux2.v
+    Info (12023): Found entity 1: mux2
+Info (12021): Found 1 design units, including 1 entities, in source file mux3.v
+    Info (12023): Found entity 1: mux3
+Info (12021): Found 1 design units, including 1 entities, in source file pcinc.v
+    Info (12023): Found entity 1: pcinc
+Info (12021): Found 1 design units, including 1 entities, in source file mux4.v
+    Info (12023): Found entity 1: mux4
+Info (12021): Found 1 design units, including 1 entities, in source file pc.v
+    Info (12023): Found entity 1: pc
+Info (12021): Found 1 design units, including 1 entities, in source file adder.v
+    Info (12023): Found entity 1: adder
+Info (12021): Found 1 design units, including 1 entities, in source file ir.v
+    Info (12023): Found entity 1: ir
+Info (12021): Found 1 design units, including 1 entities, in source file tb.v
+    Info (12023): Found entity 1: tb
+Warning (10236): Verilog HDL Implicit Net warning at LC_3b.v(65): created implicit net for "pc_out"
+Warning (10236): Verilog HDL Implicit Net warning at LC_3b.v(83): created implicit net for "mdr"
+Info (12127): Elaborating entity "LC_3b" for the top level hierarchy
+Warning (10034): Output port "LED" at LC_3b.v(12) has no driver
+Info (12128): Elaborating entity "gate" for hierarchy "gate:gateMARMUX0"
+Info (12128): Elaborating entity "pcinc" for hierarchy "pcinc:pcinc2"
+Warning (10230): Verilog HDL assignment warning at pcinc.v(20): truncated value with size 32 to match size of target (16)
+Info (12128): Elaborating entity "mux2" for hierarchy "mux2:marmux"
+Info (12128): Elaborating entity "mux3" for hierarchy "mux3:pcmux"
+Warning (10230): Verilog HDL assignment warning at mux3.v(27): truncated value with size 32 to match size of target (16)
+Info (12128): Elaborating entity "mux4" for hierarchy "mux4:addr2mux"
+Info (12128): Elaborating entity "pc" for hierarchy "pc:pc0"
+Info (12128): Elaborating entity "adder" for hierarchy "adder:adder0"
+Info (12128): Elaborating entity "lshf1" for hierarchy "lshf1:addr2_lshf1"
+Info (12128): Elaborating entity "ir" for hierarchy "ir:ir0"
+Info (12128): Elaborating entity "sext" for hierarchy "sext:sext11"
+Info (12128): Elaborating entity "sext" for hierarchy "sext:sext9"
+Info (12128): Elaborating entity "sext" for hierarchy "sext:sext6"
+Info (12128): Elaborating entity "sext" for hierarchy "sext:sext5"
+Info (12128): Elaborating entity "zext" for hierarchy "zext:zext0"
+Info (12128): Elaborating entity "regfile" for hierarchy "regfile:regfile0"
+Info (12128): Elaborating entity "alu" for hierarchy "alu:alu0"
+Info (12128): Elaborating entity "shift" for hierarchy "shift:shf"
+Info (12128): Elaborating entity "control" for hierarchy "control:control0"
+Info (12128): Elaborating entity "memory" for hierarchy "memory:memory0"
+Warning (10230): Verilog HDL assignment warning at memory.v(47): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at memory.v(70): truncated value with size 32 to match size of target (4)
+Info (276014): Found 1 instances of uninferred RAM logic
+    Info (276004): RAM logic "regfile:regfile0|reg_memory" is uninferred due to inappropriate RAM size
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/namel/Documents/GitHub/Lc3b/db/Lc3b.ram0_regfile_4c9f4da2.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Info (19000): Inferred 1 megafunctions from design logic
+    Info (276031): Inferred altsyncram megafunction from the following design logic: "control:control0|WideOr0_rtl_0"
+        Info (286033): Parameter OPERATION_MODE set to ROM
+        Info (286033): Parameter WIDTH_A set to 16
+        Info (286033): Parameter WIDTHAD_A set to 6
+        Info (286033): Parameter NUMWORDS_A set to 64
+        Info (286033): Parameter OUTDATA_REG_A set to UNREGISTERED
+        Info (286033): Parameter RAM_BLOCK_TYPE set to AUTO
+        Info (286033): Parameter INIT_FILE set to Lc3b.LC_3b0.rtl.mif
+Info (12130): Elaborated megafunction instantiation "control:control0|altsyncram:WideOr0_rtl_0"
+Info (12133): Instantiated megafunction "control:control0|altsyncram:WideOr0_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "ROM"
+    Info (12134): Parameter "WIDTH_A" = "16"
+    Info (12134): Parameter "WIDTHAD_A" = "6"
+    Info (12134): Parameter "NUMWORDS_A" = "64"
+    Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
+    Info (12134): Parameter "RAM_BLOCK_TYPE" = "AUTO"
+    Info (12134): Parameter "INIT_FILE" = "Lc3b.LC_3b0.rtl.mif"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_otu.tdf
+    Info (12023): Found entity 1: altsyncram_otu
+Warning (14284): Synthesized away the following node(s):
+    Warning (14285): Synthesized away the following RAM node(s):
+        Warning (14320): Synthesized away node "control:control0|altsyncram:WideOr0_rtl_0|altsyncram_otu:auto_generated|ram_block1a8"
+        Warning (14320): Synthesized away node "control:control0|altsyncram:WideOr0_rtl_0|altsyncram_otu:auto_generated|ram_block1a9"
+Warning (12241): 12 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13039): The following bidir pins have no drivers
+    Warning (13040): Bidir "GPIO_2[0]" has no driver
+    Warning (13040): Bidir "GPIO_2[1]" has no driver
+    Warning (13040): Bidir "GPIO_2[2]" has no driver
+    Warning (13040): Bidir "GPIO_2[3]" has no driver
+    Warning (13040): Bidir "GPIO_2[4]" has no driver
+    Warning (13040): Bidir "GPIO_2[5]" has no driver
+    Warning (13040): Bidir "GPIO_2[6]" has no driver
+    Warning (13040): Bidir "GPIO_2[7]" has no driver
+    Warning (13040): Bidir "GPIO_2[8]" has no driver
+    Warning (13040): Bidir "GPIO_2[9]" has no driver
+    Warning (13040): Bidir "GPIO_2[10]" has no driver
+    Warning (13040): Bidir "GPIO_2[11]" has no driver
+    Warning (13040): Bidir "GPIO_2[12]" has no driver
+    Warning (13040): Bidir "GPIO0[16]" has no driver
+    Warning (13040): Bidir "GPIO0[17]" has no driver
+    Warning (13040): Bidir "GPIO0[18]" has no driver
+    Warning (13040): Bidir "GPIO0[19]" has no driver
+    Warning (13040): Bidir "GPIO0[20]" has no driver
+    Warning (13040): Bidir "GPIO0[21]" has no driver
+    Warning (13040): Bidir "GPIO0[22]" has no driver
+    Warning (13040): Bidir "GPIO0[23]" has no driver
+    Warning (13040): Bidir "GPIO0[24]" has no driver
+    Warning (13040): Bidir "GPIO0[25]" has no driver
+    Warning (13040): Bidir "GPIO0[26]" has no driver
+    Warning (13040): Bidir "GPIO0[27]" has no driver
+    Warning (13040): Bidir "GPIO0[28]" has no driver
+    Warning (13040): Bidir "GPIO0[29]" has no driver
+    Warning (13040): Bidir "GPIO0[30]" has no driver
+    Warning (13040): Bidir "GPIO0[31]" has no driver
+    Warning (13040): Bidir "GPIO0[32]" has no driver
+    Warning (13040): Bidir "GPIO0[33]" has no driver
+    Warning (13040): Bidir "GPIO1[0]" has no driver
+    Warning (13040): Bidir "GPIO1[1]" has no driver
+    Warning (13040): Bidir "GPIO1[2]" has no driver
+    Warning (13040): Bidir "GPIO1[3]" has no driver
+    Warning (13040): Bidir "GPIO1[4]" has no driver
+    Warning (13040): Bidir "GPIO1[5]" has no driver
+    Warning (13040): Bidir "GPIO1[6]" has no driver
+    Warning (13040): Bidir "GPIO1[7]" has no driver
+    Warning (13040): Bidir "GPIO1[8]" has no driver
+    Warning (13040): Bidir "GPIO1[9]" has no driver
+    Warning (13040): Bidir "GPIO1[10]" has no driver
+    Warning (13040): Bidir "GPIO1[11]" has no driver
+    Warning (13040): Bidir "GPIO1[12]" has no driver
+    Warning (13040): Bidir "GPIO1[13]" has no driver
+    Warning (13040): Bidir "GPIO1[14]" has no driver
+    Warning (13040): Bidir "GPIO1[15]" has no driver
+    Warning (13040): Bidir "GPIO1[16]" has no driver
+    Warning (13040): Bidir "GPIO1[17]" has no driver
+    Warning (13040): Bidir "GPIO1[18]" has no driver
+    Warning (13040): Bidir "GPIO1[19]" has no driver
+    Warning (13040): Bidir "GPIO1[20]" has no driver
+    Warning (13040): Bidir "GPIO1[21]" has no driver
+    Warning (13040): Bidir "GPIO1[22]" has no driver
+    Warning (13040): Bidir "GPIO1[23]" has no driver
+    Warning (13040): Bidir "GPIO1[24]" has no driver
+    Warning (13040): Bidir "GPIO1[25]" has no driver
+    Warning (13040): Bidir "GPIO1[26]" has no driver
+    Warning (13040): Bidir "GPIO1[27]" has no driver
+    Warning (13040): Bidir "GPIO1[28]" has no driver
+    Warning (13040): Bidir "GPIO1[29]" has no driver
+    Warning (13040): Bidir "GPIO1[30]" has no driver
+    Warning (13040): Bidir "GPIO1[31]" has no driver
+    Warning (13040): Bidir "GPIO1[32]" has no driver
+    Warning (13040): Bidir "GPIO1[33]" has no driver
+Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
+    Warning (13047): Converted the fan-out from the tri-state buffer "gate:gateMDR0|out[0]" to the node "ir:ir0|out[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "gate:gatePC0|out[1]" to the node "ir:ir0|out[1]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "gate:gatePC0|out[2]" to the node "ir:ir0|out[2]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "gate:gatePC0|out[3]" to the node "ir:ir0|out[3]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "gate:gatePC0|out[4]" to the node "ir:ir0|out[4]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "gate:gatePC0|out[5]" to the node "ir:ir0|out[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "gate:gatePC0|out[6]" to the node "ir:ir0|out[6]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "gate:gatePC0|out[7]" to the node "ir:ir0|out[7]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "gate:gatePC0|out[8]" to the node "ir:ir0|out[8]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "gate:gatePC0|out[9]" to the node "ir:ir0|out[9]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "gate:gatePC0|out[10]" to the node "ir:ir0|out[10]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "gate:gatePC0|out[11]" to the node "ir:ir0|out[11]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "gate:gatePC0|out[12]" to the node "ir:ir0|out[12]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "gate:gatePC0|out[13]" to the node "ir:ir0|out[13]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "gate:gatePC0|out[14]" to the node "ir:ir0|out[14]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "gate:gatePC0|out[15]" to the node "ir:ir0|out[15]" into an OR gate
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "LED[0]" is stuck at GND
+    Warning (13410): Pin "LED[1]" is stuck at GND
+    Warning (13410): Pin "LED[2]" is stuck at GND
+    Warning (13410): Pin "LED[3]" is stuck at GND
+    Warning (13410): Pin "LED[4]" is stuck at GND
+    Warning (13410): Pin "LED[5]" is stuck at GND
+    Warning (13410): Pin "LED[6]" is stuck at GND
+    Warning (13410): Pin "LED[7]" is stuck at GND
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 1 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 23 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 7 input pins
-    Info (21059): Implemented 16 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4592 megabytes
-    Info: Processing ended: Sun Aug 05 14:25:31 2018
+Warning (21074): Design contains 13 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "KEY[0]"
+    Warning (15610): No output dependent on input pin "KEY[1]"
+    Warning (15610): No output dependent on input pin "SW[0]"
+    Warning (15610): No output dependent on input pin "SW[1]"
+    Warning (15610): No output dependent on input pin "SW[2]"
+    Warning (15610): No output dependent on input pin "SW[3]"
+    Warning (15610): No output dependent on input pin "GPIO_2_IN[0]"
+    Warning (15610): No output dependent on input pin "GPIO_2_IN[1]"
+    Warning (15610): No output dependent on input pin "GPIO_2_IN[2]"
+    Warning (15610): No output dependent on input pin "GPIO0_IN[0]"
+    Warning (15610): No output dependent on input pin "GPIO0_IN[1]"
+    Warning (15610): No output dependent on input pin "GPIO1_IN[0]"
+    Warning (15610): No output dependent on input pin "GPIO1_IN[1]"
+Info (21057): Implemented 786 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 14 input pins
+    Info (21059): Implemented 8 output pins
+    Info (21060): Implemented 81 bidirectional pins
+    Info (21061): Implemented 669 logic cells
+    Info (21064): Implemented 14 RAM segments
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 120 warnings
+    Info: Peak virtual memory: 4630 megabytes
+    Info: Processing ended: Sat Aug 11 17:30:29 2018
     Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:03
 
 

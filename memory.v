@@ -39,9 +39,8 @@ reg [15:0] mar, mdr;
 reg loading;
 reg saving;
 
-reg [7:0] memory [15:0];
-
-`include "sign_extend.v"
+reg [7:0] memory [65535:0] = {
+};
 
 always @(posedge clk_50) begin
     // the memory is currently trying to load something
@@ -50,11 +49,11 @@ always @(posedge clk_50) begin
         if (counter <= 0) begin
 				if (datasize == 1) begin
 					if (mar[0] == 1) begin
-						mdr <= sign_extend(memory[mar]);
+						mdr <= {{(8){memory[mar][7]}}, memory[mar][7:0]};
 						r <= 1;
 					end
 					else begin
-						mdr <= sign_extend(memory[mar + 1]);
+						mdr <= {{(8){memory[mar + 1][7]}}, memory[mar + 1][7:0]};
 						r <= 1;
 					end
 				end

@@ -1,5 +1,3 @@
-module sextfnc ();
-
 function sign_extend;
 input [7:0] temp_in;
 begin
@@ -7,4 +5,3 @@ begin
 end
 endfunction
 
-endmodule
