@@ -36,15 +36,17 @@ module LC_3b(
 //  REG/WIRE declarations
 //=======================================================
 
-reg [15:0] pcmux_out, addr2mux_out, alu_out, shf_out, bus;
-reg gatemarmux_en, gatepc_en, gateshf_en, gatealu_en, gatemdr_en, marmux_sel, addr1mux_sel, sr2mux_sel, ldmar, ldmdr, ldpc, ldir, ldcc, ldreg, r, rw, datasize, dr, lshf;
-reg [1:0] pcmux_sel, addr2mux_sel, aluk;
-reg [2:0] sr1, sr2, dr;
+wire [15:0] bus, pcmux_out, addr2mux_out, alu_out, shf_out;
+wire gatemarmux_en, gatepc_en, gateshf_en, gatealu_en, gatemdr_en, marmux_sel, addr1mux_sel, sr2mux_sel, ldmar, ldmdr, ldpc, ldir, ldcc, ldreg, r, rw, datasize, lshf;
+wire [1:0] pcmux_sel, addr2mux_sel, aluk;
+wire [2:0] sr1, sr2, dr;
 wire [15:0] zext_out, sr1_out, sr2_out, marmux_out, addr1mux_out, sr2mux_out, pcinc_out, adder_out, addr2_lshf1_out, zext_lshf_out, ir_out;
 wire [10:0] sext11_out;
 wire [8:0] sext9_out;
 wire [5:0] sext6_out;
 wire [4:0] sext5_out;
+
+assign GPIO0[15:0] = bus;
 
 //=======================================================
 //  Structural coding
@@ -109,6 +111,10 @@ mux2 addr1mux (
 	.out		(addr1mux_out)
 );
 
+// special thing for this mux:
+wire [15:0] zero;
+assign zero = 0;
+
 mux4 addr2mux (
 	.in0		(sext11_out),
 	.in1		(sext9_out),
@@ -126,6 +132,7 @@ mux2 sr2mux (
 );
 
 pc pc0 (
+	.clock_50 (CLOCK_50),
 	.in		(pcmux_out),
 	.load		(ldpc),
 	.out		(pc_out)
@@ -151,6 +158,7 @@ lshf1 zext_lshf1 (
 );
 
 ir ir0 (
+	.clock_50 (CLOCK_50),
 	.in		(bus),
 	.load		(ldir),
 	.out		(ir_out)
@@ -183,7 +191,7 @@ zext zext0 (
 
 regfile regfile0 (
 	.in		(bus),
-	.clk_50	(CLK_50),
+	.clk_50	(CLOCK_50),
 	.sr1		(sr1),
 	.sr2		(sr2),
 	.dr		(dr),
@@ -208,7 +216,7 @@ shift shf (
 );
 
 control control0 (
-	.clk_50		(CLK_50),
+	.clk_50		(CLOCK_50),
 	.r				(r),
 	.ir			(ir_out),
 	.bus			(bus),
@@ -238,7 +246,7 @@ control control0 (
 );
 
 memory memory0 (
-	.clk_50		(CLK_50),
+	.clk_50		(CLOCK_50),
    .ldMar		(ldmar),
    .ldMdr		(ldmdr),
 	.rw			(rw),
@@ -248,3 +256,5 @@ memory memory0 (
 );
 
 endmodule
+
+

@@ -1,0 +1,17 @@
+module lc_3b_test();
+
+LC_3b dut(
+	.CLOCK_50(clock)
+);
+
+reg clock;
+
+initial begin
+	clock = 0;
+end
+
+always begin
+	#5 clock <= !clock;
+end
+
+endmodule

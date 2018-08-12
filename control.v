@@ -49,9 +49,6 @@ module control (
 	aluk,
 	sr1,
 	sr2,
-	n,
-	z,
-	p,
 	ldmar,
 	ldmdr,
 	ldpc,
@@ -428,4 +425,9 @@ always @(posedge clk_50) begin
 	end
 endcase
 end
+
+initial begin
+	state = 18;
+end
+
 endmodule

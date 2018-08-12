@@ -1,54 +1,506 @@
 m255
-K4
-z2
+K3
 13
-!s112 1.1
-!i10d 8192
-!i10e 25
-!i10f 100
 cModel Technology
-Z0 dC:/Users/reyno/Documents/Summer 2018 Computer Architecture/SummerComputerArchitecture/simulation/modelsim
-vsext
-Z1 !s110 1533493556
-!i10b 1
-!s100 gdMNf<fIX^f^`FgLU`mS?2
-I5cbLZ?]7bDg?mC959?77V1
-Z2 VDg1SIo80bB@j0V0VzS_@n1
-R0
-Z3 w1533493128
-Z4 8C:/Users/reyno/Documents/Summer 2018 Computer Architecture/SummerComputerArchitecture/sext.v
-Z5 FC:/Users/reyno/Documents/Summer 2018 Computer Architecture/SummerComputerArchitecture/sext.v
-L0 12
-Z6 OP;L;10.4a;61
+Z0 dC:\Users\namel\Documents\GitHub\Lc3b\simulation\modelsim
+vadder
+I4YZD2IVOehM0nknzAkJo<3
+VGNe@GD^KD][j7O_RTL;Wc1
+Z1 dC:\Users\namel\Documents\GitHub\Lc3b\simulation\modelsim
+Z2 w1534028320
+8C:/Users/namel/Documents/GitHub/Lc3b/adder.v
+FC:/Users/namel/Documents/GitHub/Lc3b/adder.v
+L0 13
+Z3 OV;L;10.1d;51
 r1
-!s85 0
 31
-Z7 !s108 1533493556.000000
-Z8 !s107 C:/Users/reyno/Documents/Summer 2018 Computer Architecture/SummerComputerArchitecture/sext.v|
-Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/reyno/Documents/Summer 2018 Computer Architecture/SummerComputerArchitecture|C:/Users/reyno/Documents/Summer 2018 Computer Architecture/SummerComputerArchitecture/sext.v|
-!s101 -O0
-!i113 1
-Z10 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
-Z11 !s92 -vlog01compat -work work {+incdir+C:/Users/reyno/Documents/Summer 2018 Computer Architecture/SummerComputerArchitecture} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
-vsext_test
-R1
+Z4 o-vlog01compat -work work -O0
+Z5 !s92 -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b -O0
 !i10b 1
-!s100 jXzMoTQZ=cmTF8]K^PiPe3
-IXHN?SV0UBY:0n[XhdR;d^3
+!s100 F=AbX7L6eDSL9YX1bQz1B3
+!s85 0
+!s108 1534033888.276000
+!s107 C:/Users/namel/Documents/GitHub/Lc3b/adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/namel/Documents/GitHub/Lc3b|C:/Users/namel/Documents/GitHub/Lc3b/adder.v|
+!s101 -O0
+valu
+ITj[3?Zj7ObA^mGSBT3C2P1
+VFZPV0CNS`V^T^7dKUXdY>1
+R1
 R2
-R0
+Z6 8C:/Users/namel/Documents/GitHub/Lc3b/alu.v
+Z7 FC:/Users/namel/Documents/GitHub/Lc3b/alu.v
+L0 14
 R3
+r1
+31
+Z8 !s108 1534033887.560000
+Z9 !s107 C:/Users/namel/Documents/GitHub/Lc3b/alu.v|
+Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/namel/Documents/GitHub/Lc3b|C:/Users/namel/Documents/GitHub/Lc3b/alu.v|
 R4
 R5
-L0 26
+!i10b 1
+!s100 K;h:PWO9YVEfXVdViHI[R3
+!s85 0
+!s101 -O0
+valu_test
+IPlgb1OJz]8ZhPQzCfjQm82
+Vjfh^imoK[J25gP53WS`?31
+R1
+R2
 R6
+R7
+L0 42
+R3
+r1
+31
+R8
+R9
+R10
+R4
+R5
+!i10b 1
+!s100 =?N;kL^lR^VR:JZ764]PP0
+!s85 0
+!s101 -O0
+vcontrol
+Ill_MKCXOjQUCh7WWNY6_n3
+VHD3@@DkfOeOl<ZTEQzFQW1
+R1
+w1534033301
+8C:/Users/namel/Documents/GitHub/Lc3b/control.v
+FC:/Users/namel/Documents/GitHub/Lc3b/control.v
+L0 39
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 k2[HCOiV`>i9nD9HoN:^71
+!s85 0
+!s108 1534033887.083000
+!s107 C:/Users/namel/Documents/GitHub/Lc3b/control.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/namel/Documents/GitHub/Lc3b|C:/Users/namel/Documents/GitHub/Lc3b/control.v|
+!s101 -O0
+vgate
+Ic6KeN;45lQC]b^QmA5<Wc0
+V1>MC<TD7bLLZO<JFCl8Gd2
+R1
+R2
+Z11 8C:/Users/namel/Documents/GitHub/Lc3b/gate.v
+Z12 FC:/Users/namel/Documents/GitHub/Lc3b/gate.v
+L0 14
+R3
+r1
+31
+Z13 !s108 1534033887.778000
+Z14 !s107 C:/Users/namel/Documents/GitHub/Lc3b/gate.v|
+Z15 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/namel/Documents/GitHub/Lc3b|C:/Users/namel/Documents/GitHub/Lc3b/gate.v|
+R4
+R5
+!i10b 1
+!s100 5VfTH[=bgjn91NJdX]JY`3
+!s85 0
+!s101 -O0
+vgate_test
+I``3BhEhFZN3kcO`aDiUOS1
+VV1Y;nzLf_I;@[85J_h0gT2
+R1
+R2
+R11
+R12
+L0 33
+R3
+r1
+31
+R13
+R14
+R15
+R4
+R5
+!i10b 1
+!s100 2zObk=AmfXE9N^AW;GHK23
+!s85 0
+!s101 -O0
+vir
+IblAZ52MWTR]HZ5OXTR?o:2
+Vm@L3nA;S?3X=fOl[7Uo8g0
+R1
+w1534033816
+8C:/Users/namel/Documents/GitHub/Lc3b/ir.v
+FC:/Users/namel/Documents/GitHub/Lc3b/ir.v
+L0 13
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 @zUP@CT9^d]_UZ8zoMH8f2
+!s85 0
+!s108 1534033888.357000
+!s107 C:/Users/namel/Documents/GitHub/Lc3b/ir.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/namel/Documents/GitHub/Lc3b|C:/Users/namel/Documents/GitHub/Lc3b/ir.v|
+!s101 -O0
+vLC_3b
+Ii;FQP;Gh6UYX3KWGDd]1G3
+VWDmJP=hV2CQ<h^1Se>?QF1
+R1
+w1534032743
+8C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v
+FC:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v
+L0 6
+R3
+r1
+31
+R4
+R5
+n@l@c_3b
+!i10b 1
+!s100 6Fk=:ETSfoCD1B1V4@ClK3
+!s85 0
+!s108 1534033887.161000
+!s107 C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/namel/Documents/GitHub/Lc3b|C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v|
+!s101 -O0
+vlshf1
+IUWzRCXX5LYbONGHQQXoH50
+V84GiXY5cMij`66I[3WlZM0
+R1
+w1534028807
+8C:/Users/namel/Documents/GitHub/Lc3b/lshf1.v
+FC:/Users/namel/Documents/GitHub/Lc3b/lshf1.v
+L0 13
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 d]_V`cmKM=3TV`U^@PZ9Y0
+!s85 0
+!s108 1534033886.917000
+!s107 C:/Users/namel/Documents/GitHub/Lc3b/lshf1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/namel/Documents/GitHub/Lc3b|C:/Users/namel/Documents/GitHub/Lc3b/lshf1.v|
+!s101 -O0
+vmemory
+IKe@FZQU2Ul3SAzm7iPm?02
+VHS16=5mPa6X:HO5F1TiaL1
+R1
+Z16 w1534033044
+Z17 8C:/Users/namel/Documents/GitHub/Lc3b/memory.v
+Z18 FC:/Users/namel/Documents/GitHub/Lc3b/memory.v
+L0 18
+R3
+r1
+31
+Z19 !s108 1534033886.987000
+Z20 !s107 C:/Users/namel/Documents/GitHub/Lc3b/memory.v|
+Z21 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/namel/Documents/GitHub/Lc3b|C:/Users/namel/Documents/GitHub/Lc3b/memory.v|
+R4
+R5
+!i10b 1
+!s100 BBzPS1]@hFjfRi:oO==M31
+!s85 0
+!s101 -O0
+vmemory_test
+Il5`5_82<=U@MWPLDOfezT1
+VzF=6Hl03:=d1XHe9zhE:b3
+R1
+R16
+R17
+R18
+L0 106
+R3
+r1
+31
+R19
+R20
+R21
+R4
+R5
+!i10b 1
+!s100 ^]aAa5f21@Ym0HGiXo6Q72
+!s85 0
+!s101 -O0
+vmux2
+I2zSWD[onegPza3BkGD]BN1
+V8>4ag?iH4bH0iQDP6cNHR2
+R1
+R2
+8C:/Users/namel/Documents/GitHub/Lc3b/mux2.v
+FC:/Users/namel/Documents/GitHub/Lc3b/mux2.v
+L0 14
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 HB@V;me:6QQ4?12gY[Ne42
+!s85 0
+!s108 1534033887.886000
+!s107 C:/Users/namel/Documents/GitHub/Lc3b/mux2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/namel/Documents/GitHub/Lc3b|C:/Users/namel/Documents/GitHub/Lc3b/mux2.v|
+!s101 -O0
+vmux3
+IKCHf^6?zPj:>?e:Rdz6XZ3
+VBBlTDDKejZI<n52LNXzHl0
+R1
+w1534031228
+8C:/Users/namel/Documents/GitHub/Lc3b/mux3.v
+FC:/Users/namel/Documents/GitHub/Lc3b/mux3.v
+L0 15
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 gn[aB]mW4@D78o`ZJ2G2`3
+!s85 0
+!s108 1534033887.965000
+!s107 C:/Users/namel/Documents/GitHub/Lc3b/mux3.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/namel/Documents/GitHub/Lc3b|C:/Users/namel/Documents/GitHub/Lc3b/mux3.v|
+!s101 -O0
+vmux4
+IJB^^N]Ab_SmlI9LeA0Jn<0
+VKaO;CYnJXKJZjC1fO[`9;0
+R1
+w1534029812
+8C:/Users/namel/Documents/GitHub/Lc3b/mux4.v
+FC:/Users/namel/Documents/GitHub/Lc3b/mux4.v
+L0 16
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 nfKKRLV@]K?T?W=So5A^^3
+!s85 0
+!s108 1534033888.119000
+!s107 C:/Users/namel/Documents/GitHub/Lc3b/mux4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/namel/Documents/GitHub/Lc3b|C:/Users/namel/Documents/GitHub/Lc3b/mux4.v|
+!s101 -O0
+vpc
+I_Tf<5aTY0k3`?234U]Q0H3
+VZ97gPamzYkF2=fDV3`1le2
+R1
+w1534033805
+8C:/Users/namel/Documents/GitHub/Lc3b/pc.v
+FC:/Users/namel/Documents/GitHub/Lc3b/pc.v
+L0 13
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 ?i4j99UVbO[0XK=]a:5Vg2
+!s85 0
+!s108 1534033888.195000
+!s107 C:/Users/namel/Documents/GitHub/Lc3b/pc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/namel/Documents/GitHub/Lc3b|C:/Users/namel/Documents/GitHub/Lc3b/pc.v|
+!s101 -O0
+vpcinc
+IBlkYg:>93zMbW4=5@2:Nz3
+V`?7Z[[nFl[T23V=YiV6;Y3
+R1
+R2
+8C:/Users/namel/Documents/GitHub/Lc3b/pcinc.v
+FC:/Users/namel/Documents/GitHub/Lc3b/pcinc.v
+L0 12
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 Xb:d14e^2kE[l;S:YP9?m2
+!s85 0
+!s108 1534033888.043000
+!s107 C:/Users/namel/Documents/GitHub/Lc3b/pcinc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/namel/Documents/GitHub/Lc3b|C:/Users/namel/Documents/GitHub/Lc3b/pcinc.v|
+!s101 -O0
+vregfile
+I<9O4@OK_cIdFmlj]MDzhI0
+V?69Q=W1Nm]YRld3hE:jV:1
+R1
+R2
+Z22 8C:/Users/namel/Documents/GitHub/Lc3b/regfile.v
+Z23 FC:/Users/namel/Documents/GitHub/Lc3b/regfile.v
+L0 19
+R3
+r1
+31
+Z24 !s108 1534033887.457000
+Z25 !s107 C:/Users/namel/Documents/GitHub/Lc3b/regfile.v|
+Z26 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/namel/Documents/GitHub/Lc3b|C:/Users/namel/Documents/GitHub/Lc3b/regfile.v|
+R4
+R5
+!i10b 1
+!s100 flML@XGQ019>zAEWz]FNW3
+!s85 0
+!s101 -O0
+vregfile_test
+Ij>=7N`DMKYa5^^9WXlO1k0
+VNWG3_9[RmPXY4UJFP@?FX1
+R1
+R2
+R22
+R23
+L0 58
+R3
+r1
+31
+R24
+R25
+R26
+R4
+R5
+!i10b 1
+!s100 1N`XHh^B:VCRh]f`;C4PP0
+!s85 0
+!s101 -O0
+vsext
+IEZIfDQJDD_jb<]1AzaJ3]1
+V9DY@aOLeEaV^GMJSJD@8`0
+R1
+R2
+Z27 8C:/Users/namel/Documents/GitHub/Lc3b/sext.v
+Z28 FC:/Users/namel/Documents/GitHub/Lc3b/sext.v
+L0 12
+R3
+r1
+31
+Z29 !s108 1534033887.349000
+Z30 !s107 C:/Users/namel/Documents/GitHub/Lc3b/sext.v|
+Z31 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/namel/Documents/GitHub/Lc3b|C:/Users/namel/Documents/GitHub/Lc3b/sext.v|
+R4
+R5
+!i10b 1
+!s100 jh2kEB`3Eo0VZCkkLz9M12
+!s85 0
+!s101 -O0
+vsext_test
+IekTe]4e0QN3Co5bXjBfnU0
+VCGmccF@:^9k:o4ci62RQR2
+R1
+R2
+R27
+R28
+L0 26
+R3
+r1
+31
+R29
+R30
+R31
+R4
+R5
+!i10b 1
+!s100 >^g4of>b7@=c1fl`]zH[j2
+!s85 0
+!s101 -O0
+vshift
+IE@D=Ti]QnEU83=1eEKjYF0
+V>Ha^>E0ifeLInJQf[[h`m0
+R1
+R2
+Z32 8C:/Users/namel/Documents/GitHub/Lc3b/shift.v
+Z33 FC:/Users/namel/Documents/GitHub/Lc3b/shift.v
+L0 17
+R3
+r1
+31
+Z34 !s108 1534033887.676000
+Z35 !s107 C:/Users/namel/Documents/GitHub/Lc3b/shift.v|
+Z36 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/namel/Documents/GitHub/Lc3b|C:/Users/namel/Documents/GitHub/Lc3b/shift.v|
+R4
+R5
+!i10b 1
+!s100 1NG4gobVa:Cn75HC;<D_C1
+!s85 0
+!s101 -O0
+vshift_test
+ITziPSC_JMd@1KFhF2GPz<0
+V^SZQjf`2ml2^]RIaU8n:C3
+R1
+R2
+R32
+R33
+L0 43
+R3
+r1
+31
+R34
+R35
+R36
+R4
+R5
+!i10b 1
+!s100 SoP0CdL5>j33?HPTCRd>L3
+!s85 0
+!s101 -O0
+vtb
+!i10b 1
+!s100 [;L9Z8E95_g:;GM;?K0DQ0
+IHOb3QD_5Z[i8cLLeXkjaW1
+VV@Xn<HnSRM[I5c1?BH]3a3
+R1
+w1534032424
+8C:/Users/namel/Documents/GitHub/Lc3b/tb.v
+FC:/Users/namel/Documents/GitHub/Lc3b/tb.v
+L0 1
+R3
 r1
 !s85 0
 31
-R7
-R8
-R9
+!s108 1534033888.437000
+!s107 C:/Users/namel/Documents/GitHub/Lc3b/tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/namel/Documents/GitHub/Lc3b|C:/Users/namel/Documents/GitHub/Lc3b/tb.v|
 !s101 -O0
-!i113 1
-R10
-R11
+R4
+R5
+vzext
+I2Whenj1I:knT_CnmLMnQS1
+VQT1CXQdJn7mQAiS@EX<Jb0
+R1
+Z37 w1534028321
+Z38 8C:/Users/namel/Documents/GitHub/Lc3b/zext.v
+Z39 FC:/Users/namel/Documents/GitHub/Lc3b/zext.v
+L0 12
+R3
+r1
+31
+Z40 !s108 1534033887.237000
+Z41 !s107 C:/Users/namel/Documents/GitHub/Lc3b/zext.v|
+Z42 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/namel/Documents/GitHub/Lc3b|C:/Users/namel/Documents/GitHub/Lc3b/zext.v|
+R4
+R5
+!i10b 1
+!s100 0`72[olB^oaiTh`f8h3Sh3
+!s85 0
+!s101 -O0
+vzext_test
+I7QQl7Td_^Jaf]hIkSCngQ2
+VIeTZL9zm1z`EB[365nb>d0
+R1
+R37
+R38
+R39
+L0 26
+R3
+r1
+31
+R40
+R41
+R42
+R4
+R5
+!i10b 1
+!s100 7<dLbUVB9323V99k=AcG:0
+!s85 0
+!s101 -O0

@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE22F17C6
-set_global_assignment -name TOP_LEVEL_ENTITY memory
+set_global_assignment -name TOP_LEVEL_ENTITY LC_3b
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:02:15  JUNE 23, 2018"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
@@ -47,11 +47,22 @@ set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
-set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim (Verilog)"
-set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ns" -section_id eda_simulation
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_E15 -to CLOCK_50
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH lc3b -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME lc3b -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id lc3b
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb -section_id lc3b
+set_global_assignment -name VERILOG_FILE lshf1.v
 set_global_assignment -name VERILOG_FILE memory.v
 set_global_assignment -name VERILOG_FILE control.v
 set_global_assignment -name VERILOG_FILE ../LC_3b.v
@@ -61,16 +72,14 @@ set_global_assignment -name VERILOG_FILE regfile.v
 set_global_assignment -name VERILOG_FILE alu.v
 set_global_assignment -name VERILOG_FILE shift.v
 set_global_assignment -name VERILOG_FILE gate.v
-set_global_assignment -name VERILOG_FILE sextfnc.v
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name VERILOG_FILE mux2.v
 set_global_assignment -name VERILOG_FILE mux3.v
 set_global_assignment -name VERILOG_FILE pcinc.v
 set_global_assignment -name VERILOG_FILE mux4.v
 set_global_assignment -name VERILOG_FILE pc.v
 set_global_assignment -name VERILOG_FILE adder.v
-set_global_assignment -name VERILOG_FILE lshf1.v
 set_global_assignment -name VERILOG_FILE ir.v
+set_global_assignment -name VERILOG_FILE tb.v
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "1000 ns" -section_id lc3b
+set_global_assignment -name EDA_TEST_BENCH_FILE tb.v -section_id lc3b
