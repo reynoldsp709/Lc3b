@@ -22,6 +22,6 @@ input [15:0] in0, in1;
 input select;
 output [15:0] out;
 
-assign out = select ? in0 : in1;
+assign out = select ? in1 : in0;
 
 endmodule

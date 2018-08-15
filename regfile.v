@@ -40,7 +40,7 @@ integer i;
 reg [15:0] reg_memory [7:0];
 
 initial begin
-	for (i = 0; i < 7; i = i + 1)
+	for (i = 0; i < 8; i = i + 1)
 		reg_memory[i] <= 0;
 end
 
