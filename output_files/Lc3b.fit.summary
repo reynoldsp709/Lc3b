@@ -1,14 +1,14 @@
-Fitter Status : Successful - Sat Aug 11 17:18:25 2018
+Fitter Status : Successful - Tue Aug 14 16:42:39 2018
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : Lc3b
 Top-level Entity Name : LC_3b
 Family : Cyclone IV E
 Device : EP4CE22F17C6
 Timing Models : Final
-Total logic elements : 560 / 22,320 ( 3 % )
-    Total combinational functions : 524 / 22,320 ( 2 % )
-    Dedicated logic registers : 168 / 22,320 ( < 1 % )
-Total registers : 168
+Total logic elements : 697 / 22,320 ( 3 % )
+    Total combinational functions : 646 / 22,320 ( 3 % )
+    Dedicated logic registers : 183 / 22,320 ( < 1 % )
+Total registers : 183
 Total pins : 103 / 154 ( 67 % )
 Total virtual pins : 0
 Total memory bits : 896 / 608,256 ( < 1 % )

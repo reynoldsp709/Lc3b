@@ -16,13 +16,6 @@
 # 
 # Top level modules:
 # 	lshf1
-# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/memory.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module memory
-# -- Compiling module memory_test
-# 
-# Top level modules:
-# 	memory_test
 # vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/control.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module control
@@ -119,6 +112,13 @@
 # 
 # Top level modules:
 # 	ir
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/memory.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module memory
+# -- Compiling module memory_test
+# 
+# Top level modules:
+# 	memory_test
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/tb.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
@@ -168,48 +168,6 @@
 # 
 # ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO1_IN'.
 # 
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(67): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'in'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/gate.v(16).
-# 
-#         Region: /tb/dut/gatePC0
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(85): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'in'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/gate.v(16).
-# 
-#         Region: /tb/dut/gateMDR0
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(90): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'in'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/pcinc.v(13).
-# 
-#         Region: /tb/dut/pcinc2
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(112): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'in1'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux2.v(16).
-# 
-#         Region: /tb/dut/addr1mux
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(125): [PCDPC] - Port size (16 or 16) does not match connection size (11) for port 'in0'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux4.v(17).
-# 
-#         Region: /tb/dut/addr2mux
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(125): [PCDPC] - Port size (16 or 16) does not match connection size (9) for port 'in1'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux4.v(18).
-# 
-#         Region: /tb/dut/addr2mux
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(125): [PCDPC] - Port size (16 or 16) does not match connection size (6) for port 'in2'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux4.v(19).
-# 
-#         Region: /tb/dut/addr2mux
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(132): [PCDPC] - Port size (16 or 16) does not match connection size (5) for port 'in1'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux2.v(16).
-# 
-#         Region: /tb/dut/sr2mux
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(139): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/pc.v(17).
-# 
-#         Region: /tb/dut/pc0
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(170): [PCDPC] - Port size (16 or 16) does not match connection size (11) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/sext.v(14).
-# 
-#         Region: /tb/dut/sext11
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(175): [PCDPC] - Port size (16 or 16) does not match connection size (9) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/sext.v(14).
-# 
-#         Region: /tb/dut/sext9
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(180): [PCDPC] - Port size (16 or 16) does not match connection size (6) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/sext.v(14).
-# 
-#         Region: /tb/dut/sext6
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(185): [PCDPC] - Port size (16 or 16) does not match connection size (5) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/sext.v(14).
-# 
-#         Region: /tb/dut/sext5
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(256): [PCDPC] - Port size (1 or 1) does not match connection size (16) for port 'bus'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/memory.v(20).
-# 
-#         Region: /tb/dut/memory0
 # 
 # add wave *
 # view structure
@@ -217,12 +175,6 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run 1000 ns
-add wave -position end  sim:/tb/dut/ir0/out
-add wave -position end  sim:/tb/dut/pc0/in
-add wave -position end  sim:/tb/dut/pc0/clock_50
-add wave -position end  sim:/tb/dut/pc0/load
-add wave -position end  sim:/tb/dut/pc0/out
-add wave -position end  sim:/tb/dut/control0/state
 restart
 # ** Warning: (vsim-3017) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Too few port connections. Expected 10, found 1.
 # 
@@ -245,77 +197,14 @@ restart
 # 
 # ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO1_IN'.
 # 
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(67): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'in'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/gate.v(16).
-# 
-#         Region: /tb/dut/gatePC0
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(85): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'in'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/gate.v(16).
-# 
-#         Region: /tb/dut/gateMDR0
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(90): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'in'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/pcinc.v(13).
-# 
-#         Region: /tb/dut/pcinc2
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(112): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'in1'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux2.v(16).
-# 
-#         Region: /tb/dut/addr1mux
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(125): [PCDPC] - Port size (16 or 16) does not match connection size (11) for port 'in0'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux4.v(17).
-# 
-#         Region: /tb/dut/addr2mux
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(125): [PCDPC] - Port size (16 or 16) does not match connection size (9) for port 'in1'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux4.v(18).
-# 
-#         Region: /tb/dut/addr2mux
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(125): [PCDPC] - Port size (16 or 16) does not match connection size (6) for port 'in2'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux4.v(19).
-# 
-#         Region: /tb/dut/addr2mux
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(132): [PCDPC] - Port size (16 or 16) does not match connection size (5) for port 'in1'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux2.v(16).
-# 
-#         Region: /tb/dut/sr2mux
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(139): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/pc.v(17).
-# 
-#         Region: /tb/dut/pc0
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(170): [PCDPC] - Port size (16 or 16) does not match connection size (11) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/sext.v(14).
-# 
-#         Region: /tb/dut/sext11
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(175): [PCDPC] - Port size (16 or 16) does not match connection size (9) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/sext.v(14).
-# 
-#         Region: /tb/dut/sext9
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(180): [PCDPC] - Port size (16 or 16) does not match connection size (6) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/sext.v(14).
-# 
-#         Region: /tb/dut/sext6
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(185): [PCDPC] - Port size (16 or 16) does not match connection size (5) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/sext.v(14).
-# 
-#         Region: /tb/dut/sext5
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(256): [PCDPC] - Port size (1 or 1) does not match connection size (16) for port 'bus'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/memory.v(20).
-# 
-#         Region: /tb/dut/memory0
-run 10ns
-add wave -position end  sim:/tb/dut/control0/r
-add wave -position end  sim:/tb/dut/control0/addr1mux
-add wave -position end  sim:/tb/dut/control0/sr2mux
-add wave -position end  sim:/tb/dut/control0/marmux
-add wave -position end  sim:/tb/dut/control0/ldmar
-add wave -position end  sim:/tb/dut/control0/ldmdr
-add wave -position end  sim:/tb/dut/control0/ldpc
-add wave -position end  sim:/tb/dut/control0/ldir
-add wave -position end  sim:/tb/dut/control0/ldcc
-add wave -position end  sim:/tb/dut/control0/ldreg
-add wave -position end  sim:/tb/dut/control0/gatepc
-add wave -position end  sim:/tb/dut/control0/gatemdr
-add wave -position end  sim:/tb/dut/control0/gatealu
-add wave -position end  sim:/tb/dut/control0/gateshf
-add wave -position end  sim:/tb/dut/control0/gatemarmux
-add wave -position end  sim:/tb/dut/control0/rw
-add wave -position end  sim:/tb/dut/control0/datasize
-add wave -position end  sim:/tb/dut/control0/lshf
-add wave -position end  sim:/tb/dut/control0/pcmux
-add wave -position end  sim:/tb/dut/control0/addr2mux
-add wave -position end  sim:/tb/dut/control0/aluk
-add wave -position end  sim:/tb/dut/control0/sr1
-add wave -position end  sim:/tb/dut/control0/sr2
-add wave -position end  sim:/tb/dut/control0/dr
-add wave -position end  sim:/tb/dut/control0/n
-add wave -position end  sim:/tb/dut/control0/z
-add wave -position end  sim:/tb/dut/control0/p
-add wave -position end  sim:/tb/dut/control0/ben
+do wave.do
+run 0.1ns
+run 0.1ns
+add wave -position insertpoint  \
+sim:/tb/dut/alu0/aluk \
+sim:/tb/dut/alu0/a \
+sim:/tb/dut/alu0/b \
+sim:/tb/dut/alu0/result
 restart
 # ** Warning: (vsim-3017) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Too few port connections. Expected 10, found 1.
 # 
@@ -338,51 +227,11 @@ restart
 # 
 # ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO1_IN'.
 # 
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(67): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'in'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/gate.v(16).
-# 
-#         Region: /tb/dut/gatePC0
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(85): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'in'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/gate.v(16).
-# 
-#         Region: /tb/dut/gateMDR0
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(90): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'in'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/pcinc.v(13).
-# 
-#         Region: /tb/dut/pcinc2
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(112): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'in1'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux2.v(16).
-# 
-#         Region: /tb/dut/addr1mux
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(125): [PCDPC] - Port size (16 or 16) does not match connection size (11) for port 'in0'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux4.v(17).
-# 
-#         Region: /tb/dut/addr2mux
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(125): [PCDPC] - Port size (16 or 16) does not match connection size (9) for port 'in1'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux4.v(18).
-# 
-#         Region: /tb/dut/addr2mux
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(125): [PCDPC] - Port size (16 or 16) does not match connection size (6) for port 'in2'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux4.v(19).
-# 
-#         Region: /tb/dut/addr2mux
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(132): [PCDPC] - Port size (16 or 16) does not match connection size (5) for port 'in1'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux2.v(16).
-# 
-#         Region: /tb/dut/sr2mux
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(139): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/pc.v(17).
-# 
-#         Region: /tb/dut/pc0
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(170): [PCDPC] - Port size (16 or 16) does not match connection size (11) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/sext.v(14).
-# 
-#         Region: /tb/dut/sext11
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(175): [PCDPC] - Port size (16 or 16) does not match connection size (9) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/sext.v(14).
-# 
-#         Region: /tb/dut/sext9
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(180): [PCDPC] - Port size (16 or 16) does not match connection size (6) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/sext.v(14).
-# 
-#         Region: /tb/dut/sext6
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(185): [PCDPC] - Port size (16 or 16) does not match connection size (5) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/sext.v(14).
-# 
-#         Region: /tb/dut/sext5
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(256): [PCDPC] - Port size (1 or 1) does not match connection size (16) for port 'bus'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/memory.v(20).
-# 
-#         Region: /tb/dut/memory0
-run 1ns
-add wave -position 14  sim:/tb/dut/memory0/mar
-add wave -position 15  sim:/tb/dut/memory0/mdr
+run 0.1ns
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/namel/Documents/GitHub/Lc3b/simulation/modelsim/wave.do
+run 0.1ns
+add wave -position 2  sim:/tb/dut/regfile0/ldreg
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/namel/Documents/GitHub/Lc3b/simulation/modelsim/wave.do
 restart
 # ** Warning: (vsim-3017) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Too few port connections. Expected 10, found 1.
 # 
@@ -405,46 +254,310 @@ restart
 # 
 # ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO1_IN'.
 # 
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(67): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'in'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/gate.v(16).
+run 0.2ns
+add wave -position insertpoint  \
+sim:/tb/dut/sr2mux/in0 \
+sim:/tb/dut/sr2mux/in1 \
+sim:/tb/dut/sr2mux/select \
+sim:/tb/dut/sr2mux/out
+restart
+# ** Warning: (vsim-3017) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Too few port connections. Expected 10, found 1.
 # 
-#         Region: /tb/dut/gatePC0
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(85): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'in'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/gate.v(16).
+#         Region: /tb/dut
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'LED'.
 # 
-#         Region: /tb/dut/gateMDR0
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(90): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'in'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/pcinc.v(13).
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'KEY'.
 # 
-#         Region: /tb/dut/pcinc2
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(112): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'in1'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux2.v(16).
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'SW'.
 # 
-#         Region: /tb/dut/addr1mux
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(125): [PCDPC] - Port size (16 or 16) does not match connection size (11) for port 'in0'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux4.v(17).
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO_2'.
 # 
-#         Region: /tb/dut/addr2mux
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(125): [PCDPC] - Port size (16 or 16) does not match connection size (9) for port 'in1'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux4.v(18).
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO_2_IN'.
 # 
-#         Region: /tb/dut/addr2mux
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(125): [PCDPC] - Port size (16 or 16) does not match connection size (6) for port 'in2'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux4.v(19).
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO0'.
 # 
-#         Region: /tb/dut/addr2mux
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(132): [PCDPC] - Port size (16 or 16) does not match connection size (5) for port 'in1'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/mux2.v(16).
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO0_IN'.
 # 
-#         Region: /tb/dut/sr2mux
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(139): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/pc.v(17).
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO1'.
 # 
-#         Region: /tb/dut/pc0
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(170): [PCDPC] - Port size (16 or 16) does not match connection size (11) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/sext.v(14).
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO1_IN'.
 # 
-#         Region: /tb/dut/sext11
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(175): [PCDPC] - Port size (16 or 16) does not match connection size (9) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/sext.v(14).
+run 0.2ns
+restart
+# ** Warning: (vsim-3017) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Too few port connections. Expected 10, found 1.
 # 
-#         Region: /tb/dut/sext9
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(180): [PCDPC] - Port size (16 or 16) does not match connection size (6) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/sext.v(14).
+#         Region: /tb/dut
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'LED'.
 # 
-#         Region: /tb/dut/sext6
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(185): [PCDPC] - Port size (16 or 16) does not match connection size (5) for port 'out'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/sext.v(14).
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'KEY'.
 # 
-#         Region: /tb/dut/sext5
-# ** Warning: (vsim-3015) C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(256): [PCDPC] - Port size (1 or 1) does not match connection size (16) for port 'bus'. The port definition is at: C:/Users/namel/Documents/GitHub/Lc3b/memory.v(20).
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'SW'.
 # 
-#         Region: /tb/dut/memory0
-run 1ns
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO_2'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO_2_IN'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO0_IN'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO1_IN'.
+# 
+run 0.2ns
+do Lc3b_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/lshf1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module lshf1
+# 
+# Top level modules:
+# 	lshf1
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/control.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module control
+# 
+# Top level modules:
+# 	control
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module LC_3b
+# ** Error: C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(242): near ".": syntax error, unexpected '.', expecting ')'
+# ** Error: D:/Altera/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./Lc3b_run_msim_rtl_verilog.do line 10
+# D:/Altera/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v}"
+do Lc3b_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/lshf1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module lshf1
+# 
+# Top level modules:
+# 	lshf1
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/control.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module control
+# 
+# Top level modules:
+# 	control
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module LC_3b
+# ** Error: C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v(242): near ".": syntax error, unexpected '.', expecting ')'
+# ** Error: D:/Altera/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./Lc3b_run_msim_rtl_verilog.do line 10
+# D:/Altera/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v}"
+do Lc3b_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/lshf1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module lshf1
+# 
+# Top level modules:
+# 	lshf1
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/control.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module control
+# 
+# Top level modules:
+# 	control
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module LC_3b
+# 
+# Top level modules:
+# 	LC_3b
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/zext.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module zext
+# -- Compiling module zext_test
+# 
+# Top level modules:
+# 	zext_test
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/sext.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sext
+# -- Compiling module sext_test
+# 
+# Top level modules:
+# 	sext_test
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/regfile.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module regfile
+# -- Compiling module regfile_test
+# 
+# Top level modules:
+# 	regfile_test
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/alu.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module alu
+# -- Compiling module alu_test
+# 
+# Top level modules:
+# 	alu_test
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/shift.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module shift
+# -- Compiling module shift_test
+# 
+# Top level modules:
+# 	shift_test
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/gate.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module gate
+# -- Compiling module gate_test
+# 
+# Top level modules:
+# 	gate_test
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/mux2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux2
+# 
+# Top level modules:
+# 	mux2
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/mux3.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux3
+# 
+# Top level modules:
+# 	mux3
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/pcinc.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pcinc
+# 
+# Top level modules:
+# 	pcinc
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/mux4.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux4
+# 
+# Top level modules:
+# 	mux4
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/pc.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pc
+# 
+# Top level modules:
+# 	pc
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/adder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/ir.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ir
+# 
+# Top level modules:
+# 	ir
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/memory.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module memory
+# -- Compiling module memory_test
+# 
+# Top level modules:
+# 	memory_test
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/tb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb 
+# Loading work.tb
+# Loading work.LC_3b
+# Loading work.gate
+# Loading work.pcinc
+# Loading work.mux2
+# Loading work.mux3
+# Loading work.mux4
+# Loading work.pc
+# Loading work.adder
+# Loading work.lshf1
+# Loading work.ir
+# Loading work.sext
+# Loading work.zext
+# Loading work.regfile
+# Loading work.alu
+# Loading work.shift
+# Loading work.control
+# Loading work.memory
+# ** Warning: (vsim-3017) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Too few port connections. Expected 10, found 1.
+# 
+#         Region: /tb/dut
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'LED'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'KEY'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'SW'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO_2'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO_2_IN'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO0_IN'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO1_IN'.
+# 
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1000 ns
+restart
+# ** Warning: (vsim-3017) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Too few port connections. Expected 10, found 1.
+# 
+#         Region: /tb/dut
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'LED'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'KEY'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'SW'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO_2'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO_2_IN'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO0_IN'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/namel/Documents/GitHub/Lc3b/tb.v(7): [TFMPC] - Missing connection for port 'GPIO1_IN'.
+# 
+do wave.do
+run 0.2ns

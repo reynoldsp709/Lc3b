@@ -17,6 +17,6 @@ module pcinc (
 input wire [15:0] in;
 output [15:0] out;
 
-assign out = in + 2;
+assign out = in + 16'd2;
 
 endmodule

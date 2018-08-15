@@ -41,10 +41,12 @@ wire gatemarmux_en, gatepc_en, gateshf_en, gatealu_en, gatemdr_en, marmux_sel, a
 wire [1:0] pcmux_sel, addr2mux_sel, aluk;
 wire [2:0] sr1, sr2, dr;
 wire [15:0] zext_out, sr1_out, sr2_out, marmux_out, addr1mux_out, sr2mux_out, pcinc_out, adder_out, addr2_lshf1_out, zext_lshf_out, ir_out;
-wire [10:0] sext11_out;
-wire [8:0] sext9_out;
-wire [5:0] sext6_out;
-wire [4:0] sext5_out;
+wire [15:0] sext11_out;
+wire [15:0] sext9_out;
+wire [15:0] sext6_out;
+wire [15:0] sext5_out;
+
+wire [15:0] pc_out, mdr;
 
 assign GPIO0[15:0] = bus;
 
@@ -252,7 +254,8 @@ memory memory0 (
 	.rw			(rw),
 	.datasize	(datasize),
 	.bus			(bus),
-   .r				(r)
+   .r				(r),
+   .mdr			(mdr)
 );
 
 endmodule

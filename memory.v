@@ -17,12 +17,13 @@
 
 module memory (
     clk_50,
-	 bus,
+	bus,
     ldMar,
     ldMdr,
     datasize, // 1 means 8 bits, 0 means 16
     rw,
-    r
+    r,
+    mdr
 );
 
 input clk_50;
@@ -31,21 +32,28 @@ input ldMdr;
 input datasize;
 input rw;
 output reg r;
-//inout bus;
-input bus;
+inout [15:0] bus;
+output reg [15:0] mdr;
 
 reg [3:0] counter;
-reg [15:0] mar, mdr;
+reg [15:0] mar;
 reg loading;
 reg saving;
 
-reg [7:0] memory [65535:0] = {
-};
+reg [7:0] memory [65535:0];
+
+// for initialization
+initial begin
+    $readmemh("mem.hex", memory);
+    saving <= 0;
+    loading <= 0;
+    
+end
 
 always @(posedge clk_50) begin
     // the memory is currently trying to load something
     if (loading == 1) begin
-        counter <= counter - 1;
+        counter <= counter - 4'h1;
         if (counter <= 0) begin
 				if (datasize == 1) begin
 					if (mar[0] == 1) begin
@@ -59,7 +67,7 @@ always @(posedge clk_50) begin
 				end
 				else begin
 					// return the desired value
-					mdr <= (memory[mar] << 8) | memory[mar + 1];
+					mdr <= (memory[mar + 1] << 8) | memory[mar];
 					r <= 1;
 				end
 		  end
@@ -68,7 +76,7 @@ always @(posedge clk_50) begin
         end
 	 end
     else if (saving == 1 && rw == 1) begin
-        counter <= counter - 1;
+        counter <= counter - 4'h1;
         if (counter <= 0) begin
             if (datasize == 1) begin
                 // 8 bit case

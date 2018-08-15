@@ -69,106 +69,106 @@ CHIP  "Lc3b"  ASSIGNED TO AN: EP4CE22F17C6
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
 VCCIO8                       : A1        : power  :                   : 2.5V    : 8         :                
-GPIO0[26]                    : A2        : bidir  : 2.5 V             :         : 8         : N              
-GPIO0[27]                    : A3        : bidir  : 2.5 V             :         : 8         : N              
+GPIO_2[11]                   : A2        : bidir  : 2.5 V             :         : 8         : N              
+GPIO_2[8]                    : A3        : bidir  : 2.5 V             :         : 8         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : A4        :        :                   :         : 8         :                
-GPIO_2[0]                    : A5        : bidir  : 2.5 V             :         : 8         : N              
-GPIO0[19]                    : A6        : bidir  : 2.5 V             :         : 8         : N              
-GPIO0[14]                    : A7        : bidir  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A5        :        :                   :         : 8         :                
+GPIO1[18]                    : A6        : bidir  : 2.5 V             :         : 8         : N              
+GPIO0[4]                     : A7        : bidir  : 2.5 V             :         : 8         : N              
 GND+                         : A8        :        :                   :         : 8         :                
 GND+                         : A9        :        :                   :         : 7         :                
-GPIO0[30]                    : A10       : bidir  : 2.5 V             :         : 7         : N              
-GPIO_2[4]                    : A11       : bidir  : 2.5 V             :         : 7         : N              
-LED[1]                       : A12       : output : 2.5 V             :         : 7         : N              
-KEY[1]                       : A13       : input  : 2.5 V             :         : 7         : N              
-GPIO1[33]                    : A14       : bidir  : 2.5 V             :         : 7         : N              
-GPIO0[16]                    : A15       : bidir  : 2.5 V             :         : 7         : N              
+GPIO0[28]                    : A10       : bidir  : 2.5 V             :         : 7         : N              
+SW[0]                        : A11       : input  : 2.5 V             :         : 7         : N              
+GPIO1[29]                    : A12       : bidir  : 2.5 V             :         : 7         : N              
+GPIO_2[10]                   : A13       : bidir  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A14       :        :                   :         : 7         :                
+GPIO1[27]                    : A15       : bidir  : 2.5 V             :         : 7         : N              
 VCCIO7                       : A16       : power  :                   : 2.5V    : 7         :                
-GPIO_2[7]                    : B1        : bidir  : 2.5 V             :         : 1         : N              
+GPIO0[33]                    : B1        : bidir  : 2.5 V             :         : 1         : N              
 GND                          : B2        : gnd    :                   :         :           :                
-GPIO1[19]                    : B3        : bidir  : 2.5 V             :         : 8         : N              
-LED[6]                       : B4        : output : 2.5 V             :         : 8         : N              
+GPIO1_IN[1]                  : B3        : input  : 2.5 V             :         : 8         : N              
+GPIO_2[5]                    : B4        : bidir  : 2.5 V             :         : 8         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : B5        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : B6        :        :                   :         : 8         :                
-GPIO0[31]                    : B7        : bidir  : 2.5 V             :         : 8         : N              
+GPIO1[24]                    : B6        : bidir  : 2.5 V             :         : 8         : N              
+GPIO_2[12]                   : B7        : bidir  : 2.5 V             :         : 8         : N              
 GND+                         : B8        :        :                   :         : 8         :                
 GND+                         : B9        :        :                   :         : 7         :                
-GPIO1[8]                     : B10       : bidir  : 2.5 V             :         : 7         : N              
-GPIO_2[8]                    : B11       : bidir  : 2.5 V             :         : 7         : N              
+GPIO0[32]                    : B10       : bidir  : 2.5 V             :         : 7         : N              
+GPIO1[17]                    : B11       : bidir  : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : B12       :        :                   :         : 7         :                
-GPIO1[12]                    : B13       : bidir  : 2.5 V             :         : 7         : N              
-GPIO_2[10]                   : B14       : bidir  : 2.5 V             :         : 7         : N              
+GPIO_2[0]                    : B13       : bidir  : 2.5 V             :         : 7         : N              
+GPIO0[30]                    : B14       : bidir  : 2.5 V             :         : 7         : N              
 GND                          : B15       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : B16       :        :                   :         : 6         :                
 ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : C1        : input  : 2.5 V             :         : 1         : N              
-GPIO1[27]                    : C2        : bidir  : 2.5 V             :         : 1         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : C3        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C2        :        :                   :         : 1         :                
+GPIO_2_IN[0]                 : C3        : input  : 2.5 V             :         : 8         : N              
 VCCIO8                       : C4        : power  :                   : 2.5V    : 8         :                
 GND                          : C5        : gnd    :                   :         :           :                
-LED[3]                       : C6        : output : 2.5 V             :         : 8         : N              
+GPIO0[21]                    : C6        : bidir  : 2.5 V             :         : 8         : N              
 VCCIO8                       : C7        : power  :                   : 2.5V    : 8         :                
-GPIO0[13]                    : C8        : bidir  : 2.5 V             :         : 8         : N              
-GPIO0[7]                     : C9        : bidir  : 2.5 V             :         : 7         : N              
+GPIO1[32]                    : C8        : bidir  : 2.5 V             :         : 8         : N              
+GPIO0[5]                     : C9        : bidir  : 2.5 V             :         : 7         : N              
 VCCIO7                       : C10       : power  :                   : 2.5V    : 7         :                
-GPIO_2[1]                    : C11       : bidir  : 2.5 V             :         : 7         : N              
+GPIO0[31]                    : C11       : bidir  : 2.5 V             :         : 7         : N              
 GND                          : C12       : gnd    :                   :         :           :                
 VCCIO7                       : C13       : power  :                   : 2.5V    : 7         :                
-GPIO_2[12]                   : C14       : bidir  : 2.5 V             :         : 7         : N              
-GPIO0[18]                    : C15       : bidir  : 2.5 V             :         : 6         : N              
-GPIO1[32]                    : C16       : bidir  : 2.5 V             :         : 6         : N              
-GPIO1_IN[0]                  : D1        : input  : 2.5 V             :         : 1         : N              
+GPIO1[23]                    : C14       : bidir  : 2.5 V             :         : 7         : N              
+SW[2]                        : C15       : input  : 2.5 V             :         : 6         : N              
+GPIO1[12]                    : C16       : bidir  : 2.5 V             :         : 6         : N              
+LED[4]                       : D1        : output : 2.5 V             :         : 1         : N              
 ~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : D2        : input  : 2.5 V             :         : 1         : N              
-GPIO1[23]                    : D3        : bidir  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D3        :        :                   :         : 8         :                
 VCCD_PLL3                    : D4        : power  :                   : 1.2V    :           :                
-GPIO0[17]                    : D5        : bidir  : 2.5 V             :         : 8         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : D6        :        :                   :         : 8         :                
+GPIO0[22]                    : D5        : bidir  : 2.5 V             :         : 8         : N              
+GPIO1[8]                     : D6        : bidir  : 2.5 V             :         : 8         : N              
 GND                          : D7        : gnd    :                   :         :           :                
-GPIO0[1]                     : D8        : bidir  : 2.5 V             :         : 8         : N              
-GPIO0[4]                     : D9        : bidir  : 2.5 V             :         : 7         : N              
+GPIO0[7]                     : D8        : bidir  : 2.5 V             :         : 8         : N              
+GPIO0[15]                    : D9        : bidir  : 2.5 V             :         : 7         : N              
 GND                          : D10       : gnd    :                   :         :           :                
-GPIO1[9]                     : D11       : bidir  : 2.5 V             :         : 7         : N              
-GPIO0[25]                    : D12       : bidir  : 2.5 V             :         : 7         : N              
+GPIO1[3]                     : D11       : bidir  : 2.5 V             :         : 7         : N              
+GPIO1[13]                    : D12       : bidir  : 2.5 V             :         : 7         : N              
 VCCD_PLL2                    : D13       : power  :                   : 1.2V    :           :                
-GPIO1[18]                    : D14       : bidir  : 2.5 V             :         : 7         : N              
+GPIO0[27]                    : D14       : bidir  : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : D15       :        :                   :         : 6         :                
-GPIO1[20]                    : D16       : bidir  : 2.5 V             :         : 6         : N              
+GPIO_2[2]                    : D16       : bidir  : 2.5 V             :         : 6         : N              
 GND+                         : E1        :        :                   :         : 1         :                
 GND                          : E2        : gnd    :                   :         :           :                
 VCCIO1                       : E3        : power  :                   : 2.5V    : 1         :                
 GND                          : E4        : gnd    :                   :         :           :                
 GNDA3                        : E5        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E6        :        :                   :         : 8         :                
-GPIO1[31]                    : E7        : bidir  : 2.5 V             :         : 8         : N              
-GPIO0[5]                     : E8        : bidir  : 2.5 V             :         : 8         : N              
+GPIO_2[4]                    : E7        : bidir  : 2.5 V             :         : 8         : N              
+GPIO1[20]                    : E8        : bidir  : 2.5 V             :         : 8         : N              
 GPIO0[3]                     : E9        : bidir  : 2.5 V             :         : 7         : N              
-SW[0]                        : E10       : input  : 2.5 V             :         : 7         : N              
-GPIO1_IN[1]                  : E11       : input  : 2.5 V             :         : 7         : N              
+GPIO_2[7]                    : E10       : bidir  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E11       :        :                   :         : 7         :                
 GNDA2                        : E12       : gnd    :                   :         :           :                
 GND                          : E13       : gnd    :                   :         :           :                
 VCCIO6                       : E14       : power  :                   : 2.5V    : 6         :                
 CLOCK_50                     : E15       : input  : 2.5 V             :         : 6         : Y              
 GND+                         : E16       :        :                   :         : 6         :                
-GPIO0[6]                     : F1        : bidir  : 2.5 V             :         : 1         : N              
-GPIO0[10]                    : F2        : bidir  : 2.5 V             :         : 1         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : F3        :        :                   :         : 1         :                
+GPIO1[5]                     : F1        : bidir  : 2.5 V             :         : 1         : N              
+GPIO0[17]                    : F2        : bidir  : 2.5 V             :         : 1         : N              
+LED[0]                       : F3        : output : 2.5 V             :         : 1         : N              
 nSTATUS                      : F4        :        :                   :         : 1         :                
 VCCA3                        : F5        : power  :                   : 2.5V    :           :                
 GND                          : F6        : gnd    :                   :         :           :                
 VCCINT                       : F7        : power  :                   : 1.2V    :           :                
-GPIO0[12]                    : F8        : bidir  : 2.5 V             :         : 8         : N              
-GPIO1[30]                    : F9        : bidir  : 2.5 V             :         : 7         : N              
+GPIO1[11]                    : F8        : bidir  : 2.5 V             :         : 8         : N              
+GPIO0[9]                     : F9        : bidir  : 2.5 V             :         : 7         : N              
 GND                          : F10       : gnd    :                   :         :           :                
 VCCINT                       : F11       : power  :                   : 1.2V    :           :                
 VCCA2                        : F12       : power  :                   : 2.5V    :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : F13       :        :                   :         : 6         :                
-GPIO0[23]                    : F14       : bidir  : 2.5 V             :         : 6         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : F15       :        :                   :         : 6         :                
+GPIO1[10]                    : F13       : bidir  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F14       :        :                   :         : 6         :                
+GPIO1[31]                    : F15       : bidir  : 2.5 V             :         : 6         : N              
 ~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : F16       : output : 2.5 V             :         : 6         : N              
-GPIO_2[11]                   : G1        : bidir  : 2.5 V             :         : 1         : N              
-GPIO0[11]                    : G2        : bidir  : 2.5 V             :         : 1         : N              
+GPIO1[28]                    : G1        : bidir  : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G2        :        :                   :         : 1         :                
 VCCIO1                       : G3        : power  :                   : 2.5V    : 1         :                
 GND                          : G4        : gnd    :                   :         :           :                
-GPIO0[8]                     : G5        : bidir  : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G5        :        :                   :         : 1         :                
 VCCINT                       : G6        : power  :                   : 1.2V    :           :                
 VCCINT                       : G7        : power  :                   : 1.2V    :           :                
 VCCINT                       : G8        : power  :                   : 1.2V    :           :                
@@ -178,8 +178,8 @@ GND                          : G11       : gnd    :                   :         
 MSEL2                        : G12       :        :                   :         : 6         :                
 GND                          : G13       : gnd    :                   :         :           :                
 VCCIO6                       : G14       : power  :                   : 2.5V    : 6         :                
-GPIO1[29]                    : G15       : bidir  : 2.5 V             :         : 6         : N              
-GPIO_2_IN[1]                 : G16       : input  : 2.5 V             :         : 6         : N              
+GPIO_2[9]                    : G15       : bidir  : 2.5 V             :         : 6         : N              
+GPIO0[1]                     : G16       : bidir  : 2.5 V             :         : 6         : N              
 ~ALTERA_DCLK~                : H1        : output : 2.5 V             :         : 1         : N              
 ~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : H2        : input  : 2.5 V             :         : 1         : N              
 TCK                          : H3        : input  :                   :         : 1         :                
@@ -196,8 +196,8 @@ MSEL0                        : H13       :        :                   :         
 CONF_DONE                    : H14       :        :                   :         : 6         :                
 GND                          : H15       : gnd    :                   :         :           :                
 GND                          : H16       : gnd    :                   :         :           :                
-GPIO1[7]                     : J1        : bidir  : 2.5 V             :         : 2         : N              
-GPIO0[0]                     : J2        : bidir  : 2.5 V             :         : 2         : N              
+GPIO1[21]                    : J1        : bidir  : 2.5 V             :         : 2         : N              
+SW[1]                        : J2        : input  : 2.5 V             :         : 2         : N              
 nCE                          : J3        :        :                   :         : 1         :                
 TDO                          : J4        : output :                   :         : 1         :                
 TMS                          : J5        : input  :                   :         : 1         :                
@@ -208,15 +208,15 @@ GND                          : J9        : gnd    :                   :         
 GND                          : J10       : gnd    :                   :         :           :                
 GND                          : J11       : gnd    :                   :         :           :                
 VCCINT                       : J12       : power  :                   : 1.2V    :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : J13       :        :                   :         : 5         :                
-GPIO_2[9]                    : J14       : bidir  : 2.5 V             :         : 5         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : J15       :        :                   :         : 5         :                
+GPIO0[11]                    : J13       : bidir  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : J14       :        :                   :         : 5         :                
+GPIO0[14]                    : J15       : bidir  : 2.5 V             :         : 5         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : J16       :        :                   :         : 5         :                
-GPIO1[26]                    : K1        : bidir  : 2.5 V             :         : 2         : N              
-GPIO_2_IN[2]                 : K2        : input  : 2.5 V             :         : 2         : N              
+GPIO_2[1]                    : K1        : bidir  : 2.5 V             :         : 2         : N              
+GPIO1[14]                    : K2        : bidir  : 2.5 V             :         : 2         : N              
 VCCIO2                       : K3        : power  :                   : 2.5V    : 2         :                
 GND                          : K4        : gnd    :                   :         :           :                
-LED[7]                       : K5        : output : 2.5 V             :         : 2         : N              
+GPIO0[19]                    : K5        : bidir  : 2.5 V             :         : 2         : N              
 GND                          : K6        : gnd    :                   :         :           :                
 VCCINT                       : K7        : power  :                   : 1.2V    :           :                
 GND                          : K8        : gnd    :                   :         :           :                
@@ -226,101 +226,101 @@ VCCINT                       : K11       : power  :                   : 1.2V    
 GND                          : K12       : gnd    :                   :         :           :                
 GND                          : K13       : gnd    :                   :         :           :                
 VCCIO5                       : K14       : power  :                   : 2.5V    : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : K15       :        :                   :         : 5         :                
-GPIO1[28]                    : K16       : bidir  : 2.5 V             :         : 5         : N              
-GPIO_2[2]                    : L1        : bidir  : 2.5 V             :         : 2         : N              
-GPIO_2[6]                    : L2        : bidir  : 2.5 V             :         : 2         : N              
-GPIO_2_IN[0]                 : L3        : input  : 2.5 V             :         : 2         : N              
-GPIO0_IN[1]                  : L4        : input  : 2.5 V             :         : 2         : N              
+GPIO0[29]                    : K15       : bidir  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : K16       :        :                   :         : 5         :                
+LED[2]                       : L1        : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : L2        :        :                   :         : 2         :                
+GPIO_2_IN[2]                 : L3        : input  : 2.5 V             :         : 2         : N              
+GPIO1[15]                    : L4        : bidir  : 2.5 V             :         : 2         : N              
 VCCA1                        : L5        : power  :                   : 2.5V    :           :                
 VCCINT                       : L6        : power  :                   : 1.2V    :           :                
-GPIO1[0]                     : L7        : bidir  : 2.5 V             :         : 3         : N              
-GPIO_2[5]                    : L8        : bidir  : 2.5 V             :         : 3         : N              
+GPIO0[24]                    : L7        : bidir  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : L8        :        :                   :         : 3         :                
 GND                          : L9        : gnd    :                   :         :           :                
 GND                          : L10       : gnd    :                   :         :           :                
 GND                          : L11       : gnd    :                   :         :           :                
 VCCA4                        : L12       : power  :                   : 2.5V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : L13       :        :                   :         : 5         :                
-GPIO1[1]                     : L14       : bidir  : 2.5 V             :         : 5         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : L15       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L14       :        :                   :         : 5         :                
+GPIO1[0]                     : L15       : bidir  : 2.5 V             :         : 5         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : L16       :        :                   :         : 5         :                
 GND+                         : M1        :        :                   :         : 2         :                
 GND+                         : M2        :        :                   :         : 2         :                
 VCCIO2                       : M3        : power  :                   : 2.5V    : 2         :                
 GND                          : M4        : gnd    :                   :         :           :                
 GNDA1                        : M5        : gnd    :                   :         :           :                
-GPIO0[28]                    : M6        : bidir  : 2.5 V             :         : 3         : N              
-LED[4]                       : M7        : output : 2.5 V             :         : 3         : N              
-GPIO1[4]                     : M8        : bidir  : 2.5 V             :         : 3         : N              
+GPIO1[4]                     : M6        : bidir  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : M7        :        :                   :         : 3         :                
+GPIO0[10]                    : M8        : bidir  : 2.5 V             :         : 3         : N              
 VCCINT                       : M9        : power  :                   : 1.2V    :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : M10       :        :                   :         : 4         :                
+GPIO_2[6]                    : M10       : bidir  : 2.5 V             :         : 4         : N              
 VCCINT                       : M11       : power  :                   : 1.2V    :           :                
 GNDA4                        : M12       : gnd    :                   :         :           :                
 GND                          : M13       : gnd    :                   :         :           :                
 VCCIO5                       : M14       : power  :                   : 2.5V    : 5         :                
 GND+                         : M15       :        :                   :         : 5         :                
 GND+                         : M16       :        :                   :         : 5         :                
-GPIO0[33]                    : N1        : bidir  : 2.5 V             :         : 2         : N              
-GPIO1[2]                     : N2        : bidir  : 2.5 V             :         : 2         : N              
-GPIO1[24]                    : N3        : bidir  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : N1        :        :                   :         : 2         :                
+KEY[0]                       : N2        : input  : 2.5 V             :         : 2         : N              
+LED[6]                       : N3        : output : 2.5 V             :         : 3         : N              
 VCCD_PLL1                    : N4        : power  :                   : 1.2V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : N5        :        :                   :         : 3         :                
-GPIO1[25]                    : N6        : bidir  : 2.5 V             :         : 3         : N              
+GPIO1[22]                    : N6        : bidir  : 2.5 V             :         : 3         : N              
 GND                          : N7        : gnd    :                   :         :           :                
-SW[3]                        : N8        : input  : 2.5 V             :         : 3         : N              
-GPIO0[2]                     : N9        : bidir  : 2.5 V             :         : 4         : N              
+GPIO1[6]                     : N8        : bidir  : 2.5 V             :         : 3         : N              
+GPIO1[2]                     : N9        : bidir  : 2.5 V             :         : 4         : N              
 GND                          : N10       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : N11       :        :                   :         : 4         :                
-GPIO_2[3]                    : N12       : bidir  : 2.5 V             :         : 4         : N              
+GPIO0_IN[1]                  : N12       : input  : 2.5 V             :         : 4         : N              
 VCCD_PLL4                    : N13       : power  :                   : 1.2V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : N14       :        :                   :         : 5         :                
-SW[2]                        : N15       : input  : 2.5 V             :         : 5         : N              
-GPIO1[5]                     : N16       : bidir  : 2.5 V             :         : 5         : N              
-LED[2]                       : P1        : output : 2.5 V             :         : 2         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : P2        :        :                   :         : 2         :                
-GPIO1[21]                    : P3        : bidir  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : N15       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N16       :        :                   :         : 5         :                
+GPIO0[18]                    : P1        : bidir  : 2.5 V             :         : 2         : N              
+SW[3]                        : P2        : input  : 2.5 V             :         : 2         : N              
+GPIO1_IN[0]                  : P3        : input  : 2.5 V             :         : 3         : N              
 VCCIO3                       : P4        : power  :                   : 2.5V    : 3         :                
 GND                          : P5        : gnd    :                   :         :           :                
-GPIO1[6]                     : P6        : bidir  : 2.5 V             :         : 3         : N              
+GPIO1[19]                    : P6        : bidir  : 2.5 V             :         : 3         : N              
 VCCIO3                       : P7        : power  :                   : 2.5V    : 3         :                
-GPIO0[15]                    : P8        : bidir  : 2.5 V             :         : 3         : N              
-GPIO0[21]                    : P9        : bidir  : 2.5 V             :         : 4         : N              
+GPIO0[13]                    : P8        : bidir  : 2.5 V             :         : 3         : N              
+GPIO1[1]                     : P9        : bidir  : 2.5 V             :         : 4         : N              
 VCCIO4                       : P10       : power  :                   : 2.5V    : 4         :                
-GPIO1[11]                    : P11       : bidir  : 2.5 V             :         : 4         : N              
+GPIO0[26]                    : P11       : bidir  : 2.5 V             :         : 4         : N              
 GND                          : P12       : gnd    :                   :         :           :                
 VCCIO4                       : P13       : power  :                   : 2.5V    : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : P14       :        :                   :         : 4         :                
-GPIO1[22]                    : P15       : bidir  : 2.5 V             :         : 5         : N              
-GPIO1[10]                    : P16       : bidir  : 2.5 V             :         : 5         : N              
-GPIO1[17]                    : R1        : bidir  : 2.5 V             :         : 2         : N              
+GPIO1[9]                     : P14       : bidir  : 2.5 V             :         : 4         : N              
+KEY[1]                       : P15       : input  : 2.5 V             :         : 5         : N              
+LED[3]                       : P16       : output : 2.5 V             :         : 5         : N              
+GPIO1[26]                    : R1        : bidir  : 2.5 V             :         : 2         : N              
 GND                          : R2        : gnd    :                   :         :           :                
-GPIO1[14]                    : R3        : bidir  : 2.5 V             :         : 3         : N              
-LED[5]                       : R4        : output : 2.5 V             :         : 3         : N              
-GPIO0[32]                    : R5        : bidir  : 2.5 V             :         : 3         : N              
-GPIO0[29]                    : R6        : bidir  : 2.5 V             :         : 3         : N              
-LED[0]                       : R7        : output : 2.5 V             :         : 3         : N              
+GPIO_2[3]                    : R3        : bidir  : 2.5 V             :         : 3         : N              
+GPIO1[7]                     : R4        : bidir  : 2.5 V             :         : 3         : N              
+GPIO0[23]                    : R5        : bidir  : 2.5 V             :         : 3         : N              
+LED[1]                       : R6        : output : 2.5 V             :         : 3         : N              
+GPIO0[25]                    : R7        : bidir  : 2.5 V             :         : 3         : N              
 GND+                         : R8        :        :                   :         : 3         :                
 GND+                         : R9        :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : R10       :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : R11       :        :                   :         : 4         :                
-GPIO1[15]                    : R12       : bidir  : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : R13       :        :                   :         : 4         :                
-GPIO0[24]                    : R14       : bidir  : 2.5 V             :         : 4         : N              
+GPIO0[0]                     : R10       : bidir  : 2.5 V             :         : 4         : N              
+GPIO0[6]                     : R11       : bidir  : 2.5 V             :         : 4         : N              
+GPIO0[2]                     : R12       : bidir  : 2.5 V             :         : 4         : N              
+GPIO_2_IN[1]                 : R13       : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R14       :        :                   :         : 4         :                
 GND                          : R15       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R16       :        :                   :         : 5         :                
 VCCIO3                       : T1        : power  :                   : 2.5V    : 3         :                
-GPIO0_IN[0]                  : T2        : input  : 2.5 V             :         : 3         : N              
-GPIO0[20]                    : T3        : bidir  : 2.5 V             :         : 3         : N              
-GPIO1[16]                    : T4        : bidir  : 2.5 V             :         : 3         : N              
-KEY[0]                       : T5        : input  : 2.5 V             :         : 3         : N              
-GPIO1[13]                    : T6        : bidir  : 2.5 V             :         : 3         : N              
-GPIO0[9]                     : T7        : bidir  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : T2        :        :                   :         : 3         :                
+GPIO1[16]                    : T3        : bidir  : 2.5 V             :         : 3         : N              
+LED[7]                       : T4        : output : 2.5 V             :         : 3         : N              
+GPIO0_IN[0]                  : T5        : input  : 2.5 V             :         : 3         : N              
+GPIO1[25]                    : T6        : bidir  : 2.5 V             :         : 3         : N              
+GPIO0[20]                    : T7        : bidir  : 2.5 V             :         : 3         : N              
 GND+                         : T8        :        :                   :         : 3         :                
 GND+                         : T9        :        :                   :         : 4         :                
-GPIO1[3]                     : T10       : bidir  : 2.5 V             :         : 4         : N              
-GPIO0[22]                    : T11       : bidir  : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : T12       :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : T13       :        :                   :         : 4         :                
-SW[1]                        : T14       : input  : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : T15       :        :                   :         : 4         :                
+GPIO0[8]                     : T10       : bidir  : 2.5 V             :         : 4         : N              
+GPIO0[12]                    : T11       : bidir  : 2.5 V             :         : 4         : N              
+GPIO0[16]                    : T12       : bidir  : 2.5 V             :         : 4         : N              
+GPIO1[33]                    : T13       : bidir  : 2.5 V             :         : 4         : N              
+GPIO1[30]                    : T14       : bidir  : 2.5 V             :         : 4         : N              
+LED[5]                       : T15       : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : T16       : power  :                   : 2.5V    : 4         :                

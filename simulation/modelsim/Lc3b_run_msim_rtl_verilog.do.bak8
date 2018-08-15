@@ -1,0 +1,33 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/lshf1.v}
+vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/memory.v}
+vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/control.v}
+vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/LC_3b.v}
+vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/zext.v}
+vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/sext.v}
+vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/regfile.v}
+vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/alu.v}
+vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/shift.v}
+vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/gate.v}
+vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/mux2.v}
+vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/mux3.v}
+vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/pcinc.v}
+vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/mux4.v}
+vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/pc.v}
+vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/adder.v}
+vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/ir.v}
+
+vlog -vlog01compat -work work +incdir+C:/Users/namel/Documents/GitHub/Lc3b {C:/Users/namel/Documents/GitHub/Lc3b/tb.v}
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb
+
+add wave *
+view structure
+view signals
+run 1000 ns

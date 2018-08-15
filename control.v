@@ -74,7 +74,7 @@ output reg [2:0] sr1, sr2, dr;
 reg n, z, p, ben;
 reg [5:0] state;
 
-always @(posedge clk_50) begin
+always @(negedge clk_50) begin
 	// Set control codes
 	if (ldcc == 1) begin
 		if (bus < 0)
@@ -173,10 +173,7 @@ always @(posedge clk_50) begin
 	6'd1: begin
 		sr1 <= ir[8:6];
 		sr2 <= ir[2:0];
-		if (ir[5])
-			sr2mux <= 1;
-		else
-			sr2mux <= 0;
+		sr2mux <= ir[5];
 		aluk <= 0;
 		dr <= ir[11:9];
 		gatealu <= 1;
